@@ -23,6 +23,7 @@
   background-color: white;
   border-top: white;
   margin-top: -100px;
+  padding-bottom: 5;
 }
 .hero .code-with-header {
   box-shadow:  0 0 5px 5px rgba(0, 0, 0, 0.3);
@@ -48,7 +49,6 @@
 }
 .forDevelopers {
   display: flex;
-  margin-top: 5rem;
   align-items: center;
   padding: 2rem 0;
   width: 100%;
