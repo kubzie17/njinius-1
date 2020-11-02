@@ -202,9 +202,9 @@ function Home() {
             <div className="row">
               <div className="col col--5">
                 
-                <h2 className="hero__title">About</h2>
+                <h2 className="hero__title">Welcome to NJinius Engineering Club where iron sharpens iron...</h2>
                 <p className="hero__subtitle">
-                  Supabase adds realtime and restful APIs to Postgres without a single line of code.
+                <p>   Join us and do something NJinius!</p>
                 </p>
                 <div>
                   <Link
@@ -252,7 +252,8 @@ function Home() {
               <div className="col col--7">
               <h2 className="hero__title">{siteConfig.tagline}</h2>
                 <p className="hero__subtitle">
-                  Supabase adds realtime and restful APIs to Postgres without a single line of code.
+                <p>NJinius was created to help people of all ability levels develop their understanding of programming and business. We are creating a community of like-minded individuals who seek to expand and develop a 360 understanding of their respective industry. 
+                    We hold workshops, tutorials and discussions in many different subject areas for this purpose, offering a relaxed environment to learn and develop new skills.</p>
                 </p>
                 <div>
                   <Link
@@ -396,9 +397,9 @@ function Home() {
                 <div className="col col--6 col--offset-3">
                   <h2 className="">For Developers</h2>
                   <p className="">
-                    We introspect your database and provide APIs 
-                    <strong className="has-emphasis">instantly</strong> so you can stop building
-                    repetitive CRUD APIs and focus on building your products.
+                    Below are different Track 
+                    <strong className="has-emphasis">Schedules</strong> so you can start planning 
+                    which events to attend. Please watch out for Support Materials in our Documents Sections   
                   </p>
                 </div>
               </div>
@@ -412,7 +413,7 @@ function Home() {
                         }`}
                         onClick={() => showCodeExample('READ')}
                       >
-                        Get your data
+                        Software Workshops
                       </button>
                       <button
                         className={`button button--${
@@ -420,31 +421,7 @@ function Home() {
                         }`}
                         onClick={() => showCodeExample('SUBSCRIBE')}
                       >
-                        Realtime subscriptions
-                      </button>
-                      <button
-                        className={`button button--${
-                          visibleCodeExample === 'CREATE' ? 'info is-active' : 'info '
-                        }`}
-                        onClick={() => showCodeExample('CREATE')}
-                      >
-                        Create a record
-                      </button>
-                      <button
-                        className={`button button--${
-                          visibleCodeExample === 'UPDATE' ? 'info is-active' : 'info '
-                        }`}
-                        onClick={() => showCodeExample('UPDATE')}
-                      >
-                        Update multiple rows
-                      </button>
-                      <button
-                        className={`button button--${
-                          visibleCodeExample === 'NODETS' ? 'info is-active' : 'info '
-                        }`}
-                        onClick={() => showCodeExample('NODETS')}
-                      >
-                        Node.js & TypeScript support
+                        Business Workshops
                       </button>
                       <button
                         className={`button button--${
@@ -452,7 +429,7 @@ function Home() {
                         }`}
                         onClick={() => showCodeExample('UMD')}
                       >
-                        Install from CDN
+                        Book Clubs
                       </button>
                     </div>
                   </div>

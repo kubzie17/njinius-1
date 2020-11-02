@@ -169,15 +169,15 @@ function Schedule() {
           {/* HEADER */}
           <header className={classnames('hero full', styles.heroBanner)}>
               {/* For Devs */}
-          <section className={styles.forDevelopers}>
+<section className={styles.forDevelopers}>
             <div className="container">
               <div className={classnames('row', styles.responsiveCentered)}>
                 <div className="col col--6 col--offset-3">
                   <h2 className="">For Developers</h2>
                   <p className="">
-                    We introspect your database and provide APIs 
-                    <strong className="has-emphasis">instantly</strong> so you can stop building
-                    repetitive CRUD APIs and focus on building your products.
+                    Below are different Track 
+                    <strong className="has-emphasis">Schedules</strong> so you can start planning 
+                    which events to attend. Please watch out for Support Materials in our Documents Sections   
                   </p>
                 </div>
               </div>
@@ -191,7 +191,7 @@ function Schedule() {
                         }`}
                         onClick={() => showCodeExample('READ')}
                       >
-                        Get your data
+                        Software Workshops
                       </button>
                       <button
                         className={`button button--${
@@ -199,31 +199,7 @@ function Schedule() {
                         }`}
                         onClick={() => showCodeExample('SUBSCRIBE')}
                       >
-                        Realtime subscriptions
-                      </button>
-                      <button
-                        className={`button button--${
-                          visibleCodeExample === 'CREATE' ? 'info is-active' : 'info '
-                        }`}
-                        onClick={() => showCodeExample('CREATE')}
-                      >
-                        Create a record
-                      </button>
-                      <button
-                        className={`button button--${
-                          visibleCodeExample === 'UPDATE' ? 'info is-active' : 'info '
-                        }`}
-                        onClick={() => showCodeExample('UPDATE')}
-                      >
-                        Update multiple rows
-                      </button>
-                      <button
-                        className={`button button--${
-                          visibleCodeExample === 'NODETS' ? 'info is-active' : 'info '
-                        }`}
-                        onClick={() => showCodeExample('NODETS')}
-                      >
-                        Node.js & TypeScript support
+                        Business Workshops
                       </button>
                       <button
                         className={`button button--${
@@ -231,7 +207,7 @@ function Schedule() {
                         }`}
                         onClick={() => showCodeExample('UMD')}
                       >
-                        Install from CDN
+                        Book Clubs
                       </button>
                     </div>
                   </div>
