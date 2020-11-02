@@ -1,40 +1,16 @@
 ---
 id: about
 title: About
-description: 'What is Supabase?'
+description: 'About'
 slug: /
 ---
 
-## What it is.
+## NJinius
 
-Supabase is an open source Firebase alternative. We are a service to:
+Welcome to NJinius Engineering Club where iron sharpens iron...
 
-- listen to database changes 
-- query your tables, including filtering, pagination, and deeply nested relationships (like GraphQL)
-- create, update, and delete rows
-- manage your users and their permissions
-- interact with your database using a simple UI
+NJinius was created to help people of all ability levels develop their understanding of programming and business. We are creating a community of like-minded individuals who seek to expand and develop a 360 understanding of their respective industry. We hold workshops, tutorials and discussions in many different subject areas for this purpose, offering a relaxed environment to learn and develop new skills.  
 
+NJinius is not limited to work and industry; this is a space designed to nurture creativity, personal development, friendships and collaborations. Our blog pages offer every user an opportunity to express their interests and ideas. We also encourage you to share and discuss your work freely. The community is welcome to challenge each other’s ideas and perspectives. However, please treat everyone with respect, and in all your interactions, we urge you to remember that this is a platform to help each other grow, collaborate and inspire.  
 
-## What it isn't.
-
-Supabase is not a 1-to-1 mapping of Firebase. While we are building many of the features that Firebase offers, we are not going about it the same way. 
-
-Our technological choices are quite different to Firebase. Everything we use is open source. Wherever possible we use and support existing tools in the ecosystem, rather than developing from scratch.
-
-Most notably, we use Postgres rather than a NoSQL store. This was a deliberate choice. We believe that no other database on the market offers the scalability and functionality required to legitimately compete with Firebase. 
-
-## How it works.
-
-At its core, is a suite of open source tools, stiched together to build a seamless developer experience:
-
-![Supabase Architecture](/img/supabase-architecture.png)
-
-- [PostgreSQL](https://www.postgresql.org/) is an object-relational database system with over 30 years of active development that has earned it a strong reputation for reliability, feature robustness, and performance.
-- [Realtime](https://github.com/supabase/realtime) is an Elixir server that allows you to listen to PostgreSQL inserts, updates, and deletes using websockets. Supabase listens to Postgres' built-in replication functionality, converts the replication byte stream into JSON, then broadcasts the JSON over websockets. 
-- [PostgREST](http://postgrest.org/) is a web server that turns your PostgreSQL database directly into a RESTful API
-- [pg-api](https://github.com/supabase/pg-api) is a RESTful API for managing your Postgres, allowing you to fetch tables, add roles, and run queries etc.
-- [GoTrue](https://github.com/netlify/gotrue) is an SWT based API for managing users and issuing SWT tokens.
-- [Kong](https://github.com/Kong/kong) is a cloud-native API gateway.
-
-
+So please join us, innovate, have fun and do something NJinius!
