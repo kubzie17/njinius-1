@@ -24,6 +24,11 @@ const newMessages = supabase
   .subscribe()
 `.trim()
 const subscribeExample = `
+
+hello this is some hype talk about software
+
+
+
 import { createClient } from '@supabase/supabase-js'
 
 // Initialize 
@@ -40,23 +45,17 @@ const realtime = supabase
   .subscribe()
 `.trim()
 const readExample = `
-import { createClient } from '@supabase/supabase-js'
-
-// Initialize 
-const supabaseUrl = 'https://chat-room.supabase.co'
-const supabaseKey = 'public-anon-key'
-const supabase = createClient(supabaseUrl, supabaseKey)
-
-// Get public rooms and their messages
-const publicRooms = await supabase
-  .from('rooms')
-  .select(\`
-    name,
-    messages ( text )
-  \`)
-  .eq('public', true)
+NJinius was created to help people of all ability levels develop their understanding 
+of programming and business. We are creating a community of like-minded individuals who seek to 
+expand and develop a 360 understanding of their respective industry. We hold workshops, tutorials 
+and discussions in many different subject areas for this purpose, offering a relaxed environment 
+to learn and develop new skills.
 `.trim()
 const createExample = `
+hellos this is some hype talk about software
+hellos this is some hype talk about software
+
+
 import { createClient } from '@supabase/supabase-js'
 
 // Initialize 
@@ -206,28 +205,7 @@ function Home() {
                 <p className="hero__subtitle">
                 <p>   Join us and do something NJinius!</p>
                 </p>
-                <div>
-                  <Link
-                    className={classnames(
-                      'button hero--button button--md button--secondary button--outline responsive-button',
-                      styles.button
-                    )}
-                    to={useBaseUrl('docs')}
-                    style={{ marginLeft: 0, marginTop: 10 }}
-                  >
-                    Learn More
-                  </Link>
-                  <Link
-                    className={classnames(
-                      'button hero--button button--md button--primary responsive-button',
-                      styles.button
-                    )}
-                    to={'https://app.supabase.io'}
-                    style={{ marginTop: 10 }}
-                  >
-                    Alpha sign up →
-                  </Link>
-                </div>
+                
               </div>
               <div className="col col--7">
                 <img className="njinius" src='/static/img/njinaltlogo.png' height="380" width="390"/>
@@ -250,7 +228,7 @@ function Home() {
                 
               </div>
               <div className="col col--7">
-              <h2 className="hero__title">{siteConfig.tagline}</h2>
+              <h2 className="hero__title" style={{ marginLeft: 200}}>{siteConfig.tagline}</h2>
                 <p className="hero__subtitle">
                 <p>NJinius was created to help people of all ability levels develop their understanding of programming and business. We are creating a community of like-minded individuals who seek to expand and develop a 360 understanding of their respective industry. 
                     We hold workshops, tutorials and discussions in many different subject areas for this purpose, offering a relaxed environment to learn and develop new skills.</p>
@@ -262,20 +240,11 @@ function Home() {
                       styles.button
                     )}
                     to={useBaseUrl('docs')}
-                    style={{ marginLeft: 0, marginTop: 10 }}
+                    style={{ marginLeft: 200, marginTop: 10 }}
                   >
                     Learn More
                   </Link>
-                  <Link
-                    className={classnames(
-                      'button hero--button button--md button--primary responsive-button',
-                      styles.button
-                    )}
-                    to={'https://app.supabase.io'}
-                    style={{ marginTop: 10 }}
-                  >
-                    Alpha sign up →
-                  </Link>
+                 
                 </div>
                 {/* <CustomCodeBlock
                  // header="Query your PostgreSQL database and listen in real-time."
@@ -395,11 +364,11 @@ function Home() {
             <div className="container">
               <div className={classnames('row', styles.responsiveCentered)}>
                 <div className="col col--6 col--offset-3">
-                  <h2 className="">For Developers</h2>
+                  <h2 className="">Something For Everyone</h2>
                   <p className="">
-                    Below are different Track 
-                    <strong className="has-emphasis">Schedules</strong> so you can start planning 
-                    which events to attend. Please watch out for Support Materials in our Documents Sections   
+                    Below are different  
+                    <strong className="has-emphasis"> Tracks</strong> so you so there is definitely something for everyone. So why don't 
+                    you pick your favorite track and get started with fun learning and collaboration
                   </p>
                 </div>
               </div>

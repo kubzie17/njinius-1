@@ -182,7 +182,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Supabase.`,
+      copyright: `Copyright © ${new Date().getFullYear()} NjiniusLtd.`,
     },
   },
   presets: [
