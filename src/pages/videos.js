@@ -11,9 +11,9 @@ import HowCard from '../components/HowCard'
 import { repos } from '../data/github'
 import { Container, Row, Col, Button, Alert, Breadcrumb, Card } from 'react-bootstrap'
 import VideoPlayer from 'react-video-js-player';
-import Car from "/Development/injinius/static/videos/car.mp4"
-import Var from "/Development/injinius/static/videos/van.mp4"
-import bik from "/Development/injinius/static/videos/bike.mp4"
+import Car from "/Development/njinius/static/videos/car.mp4"
+import Var from "/Development/njinius/static/videos/van.mp4"
+import bik from "/Development/njinius/static/videos/bike.mp4"
 
 
 

@@ -7,7 +7,7 @@
 
 module.exports = {
   title: 'Njinius',
-  tagline: 'The open source Firebase alternative.',
+  tagline: 'About',
   url: 'https://supabase.io',
   baseUrl: '/',
   favicon: '/static/img/njinlogo.png',
