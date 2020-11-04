@@ -22,7 +22,7 @@ module.exports = {
 
       // Hides the switch in the navbar
       // Useful if you want to support a single color mode
-      disableSwitch: true,
+      disableSwitch: false,
 
       // Should we use the prefers-color-scheme media-query,
       // using user system preferences, instead of the hardcoded defaultMode
@@ -46,8 +46,8 @@ module.exports = {
       apiKey: '766d56f13dd1e82f43253559b7c86636',
       indexName: 'njinius',
     },
-    image: '/img/supabase-og-image.png', // used for meta tag, in particular og:image and twitter:image
-    metaImage: '/img/supabase-og-image.png',
+    image: '/static/img/njiniusone.png', // used for meta tag, in particular og:image and twitter:image
+    metaImage: '/static/img/njiniusone.png',
     googleAnalytics: {
       trackingID: 'UA-155232740-1',
     },
@@ -65,7 +65,7 @@ module.exports = {
       logo: {
         alt: 'Njinius',
         src: '/static/img/njiniusone.png',
-        srcDark: '/supabase-dark.svg',
+        srcDark: '/static/img/njiniusone.png',
       },
       items: [
         {
