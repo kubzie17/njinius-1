@@ -37,7 +37,7 @@ function Archive() {
                         <div className="container" color="blue">
                             <div className={classnames('row', styles.responsiveCentered)}>
                                 <div className="col col--6 col--offset-3">
-                                    <h2 className="">Tracks</h2>
+                                    <h2 className="">Videos</h2>
                                     <p className="">Njinius mostly consist of 3 tracks, Business, Software and Bookcase. Pick your track and get involved </p>
                                 </div>
                             </div>
