@@ -25,7 +25,7 @@ const newMessages = supabase
 `.trim()
 const subscribeExample = `
 
-hello this is some hype talk about software
+hello  is some hype talk about software
 
 
 
@@ -45,11 +45,11 @@ const realtime = supabase
   .subscribe()
 `.trim()
 const readExample = `
-NJinius was created to help people of all ability levels develop their understanding 
+"NJinius was created to help people, all ability levels develop their understanding 
 of programming and business. We are creating a community of like-minded individuals who seek to 
 expand and develop a 360 understanding of their respective industry. We hold workshops, tutorials 
 and discussions in many different subject areas for this purpose, offering a relaxed environment 
-to learn and develop new skills.
+to learn and develop new skills."
 `.trim()
 const createExample = `
 hellos this is some hype talk about software
@@ -201,9 +201,9 @@ function Home() {
             <div className="row">
               <div className="col col--5">
                 
-                <h2 className="hero__title">Welcome to NJinius Engineering Club where iron sharpens iron...</h2>
+                <h2 className="hero__title">Welcome to NJinius Hub where iron sharpens iron...</h2>
                 <p className="hero__subtitle">
-                <p>   Join us and do something NJinius!</p>
+                <p>Join us and do something NJinius!</p>
                 </p>
                 
               </div>
@@ -224,7 +224,7 @@ function Home() {
   
             <div className="row">
               <div className="col col--5">
-              <img className="aboutlogo" src='/static/img/njinaltlogo.png' height="380" width="390"/>
+              <img className="aboutlogo" src='/static/img/aboutus.jpg' height="380" width="350"/>
                 
               </div>
               <div className="col col--7">

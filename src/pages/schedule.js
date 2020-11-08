@@ -164,7 +164,7 @@ function Schedule() {
     const { siteConfig = {} } = context
     const [visibleCodeExample, showCodeExample] = useState('READ')
     return (
-      <Layout title={`${siteConfig.title}`} description={siteConfig.tagline}>
+      <Layout title="Schedule" description={siteConfig.tagline}>
         <main className="SchedulePage" >
           {/* HEADER */}
           <header className={classnames('hero full', styles.heroBanner)}>

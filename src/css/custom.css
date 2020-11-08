@@ -942,5 +942,9 @@ html[data-theme='dark'] .navbar-item-github:before {
 }
 
 .njinius{
-  margin-left: 100px;
+  margin-left: 50px;
+}
+
+.aboutlogo{
+  margin-left: 50px;
 }
