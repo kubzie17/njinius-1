@@ -41,13 +41,13 @@ module.exports = {
         },
       },
     },
-    sidebarCollapsible: false,
+    sidebarCollapsible: true,
     algolia: {
       apiKey: '766d56f13dd1e82f43253559b7c86636',
       indexName: 'njinius',
     },
-    image: '/img/supabase-og-image.png', // used for meta tag, in particular og:image and twitter:image
-    metaImage: '/img/supabase-og-image.png',
+    image: '/static/img/njiniusone.png', // used for meta tag, in particular og:image and twitter:image
+    metaImage: '/static/img/njiniusone.png',
     googleAnalytics: {
       trackingID: 'UA-155232740-1',
     },
@@ -65,7 +65,7 @@ module.exports = {
       logo: {
         alt: 'Njinius',
         src: '/static/img/njiniusone.png',
-        srcDark: '/supabase-dark.svg',
+        srcDark: '/static/img/njiniusone.png',
       },
       items: [
         {
@@ -80,25 +80,21 @@ module.exports = {
           position: 'right',
           className: 'navbar-item-pages',
         },
-        { to: '/schedule', label: 'Schedule', position: 'right' },
+        { to: '/docs/doc6', label: 'Schedule', position: 'right' },
         {
           to: '/videos',
           label: 'Videos',
           position: 'right',
         },
-        {
-          to: '/docs/software',
-          label: 'Software',
-          position: 'right',
-        },
+
         {
           to: '/tracks',
           label: 'Tracks',
           position: 'right',
         },
-       // { href: 'https://app.supabase.io', label: 'Login', position: 'right' },
+
         {
-          href: 'https://github.com/supabase/supabase',
+          href: 'https://github.com/njinius',
           className: 'navbar-item-github',
           position: 'right',
         },
@@ -121,33 +117,29 @@ module.exports = {
               to: '/blog',
             },
             {
-              label: 'Open source',
-              to: '/oss',
+              label: 'About Us',
+              to: '/docs/',
             },
             {
-              label: 'Humans.txt',
-              to: 'https://supabase.io/humans.txt',
-            },
-            {
-              label: 'Lawyers.txt',
-              to: 'https://supabase.io/lawyers.txt',
+              label: 'FAQs',
+              to: 'docs/faq',
             },
           ],
         },
         {
-          title: 'Resources',
+          title: 'Legal',
           items: [
             {
-              label: 'Docs',
-              to: '/docs',
+              label: 'Privacy Notice',
+              to: '/docs/legal/privacyNotice',
             },
             {
-              label: 'Pricing',
-              to: '/docs/pricing',
+              label: 'Cookie Policy',
+              to: '/docs/legal/cookiePolicy',
             },
             {
-              label: 'Support',
-              to: '/docs/support',
+              label: 'Disclaimer',
+              to: '/docs/legal/disclaimer',
             },
           ],
         },
@@ -156,33 +148,30 @@ module.exports = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/supabase/supabase',
+              href: 'https://github.com/njinius',
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/supabase_io',
+              href: 'https://twitter.com/njinius1',
             },
             {
-              label: 'DevTo',
-              href: 'https://dev.to/supabase',
+              label: 'Youtube',
+              href: 'https://www.youtube.com/channel/UCmcoHCFEYhuti8aarL3ieUg?view_as=subscriber',
             },
-            // {
-            //   label: "Discord",
-            //   href: "https://discordapp.com/invite/docusaurus"
-            // }
+           
           ],
         },
         {
-          title: 'Alpha',
+          title: 'Slack',
           items: [
             {
-              label: 'Join our alpha',
-              href: 'https://app.supabase.io',
+              label: 'Join our Slack channel',
+              href: 'https://join.slack.com/t/njinius/shared_invite/zt-iyerljia-YZTOp5gabUTBzk1wyTomyw',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Supabase.`,
+      copyright: `Copyright © ${new Date().getFullYear()} NjiniusLtd.`,
     },
   },
   presets: [
@@ -198,4 +187,4 @@ module.exports = {
       },
     ],
   ],
-}
+};
