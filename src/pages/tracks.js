@@ -15,7 +15,7 @@ function Archive() {
     const { siteConfig = {} } = context
     const [visibleCodeExample, showCodeExample] = useState('READ')
     return (
-      <Layout title={`${siteConfig.title}`} description={siteConfig.tagline}>
+      <Layout title="Tracks" description={siteConfig.tagline}>
         <main className="ArchivePage" >
           {/* HEADER */}
           <header className={classnames('hero full', styles.heroBanner)}>
@@ -35,12 +35,12 @@ function Archive() {
                 <div className="HowSections row is-multiline">
                 <div className={'col col--4 '}>
                     <div>
-                    <img
-                        className="diagram"
-                        src="/static/img/business.png"
-                        height="261.06" width="348"
-                    />
+                        <Link
+                            to={useBaseUrl('docs')}>
+                            <img className="diagram" src="/static/img/business.png"  height="261.06" width="348"/>
+                        </Link>
                     </div>
+                   
                     <div>
                     <HowCard
                         title="Business"
@@ -59,8 +59,12 @@ function Archive() {
 
                 <div className={'col col--4 '}>
                     <div>
-                    <img className="diagram" src="/static/img/software.jpeg" height="261.06" width="348" />
+                        <Link
+                            to={useBaseUrl('docs')}>
+                            <img className="diagram" src="/static/img/software.jpeg"  height="261.06" width="348"/>
+                        </Link>
                     </div>
+
                     <div>
                     <HowCard
                         title="Software"
@@ -74,22 +78,28 @@ function Archive() {
                     />
                     </div>
                 </div>
-
+                        
                 <div className={'col col--4 '}>
+
                     <div>
-                    <img className="diagram" src="/static/img/book.jpg"  height="261.06" width="348" />
+                        <Link
+                            to={useBaseUrl('docs')}>
+                            <img className="diagram" src="/static/img/book.jpg"  height="261.06" width="348"/>
+                        </Link>
                     </div>
                     <div>
-                    <HowCard
-                        title="Book Club"
-                        description={<>Enrich the mind with book club and share favorites</>}
-                        featureTitle="Build"
-                        features={[
-                        'Discuss your favorite/inspirational books',
-                        'Recommend books to other members',
-                        'Realtime chat apps',
-                        ]}
-                    />
+                        <HowCard
+                            
+                            title="Book Club"
+                            description={<>Enrich the mind with book club and share favorites</>}
+                            featureTitle="Build"
+                            features={[
+                            'Discuss your favorite/inspirational books',
+                            'Recommend books to other members',
+                            'Realtime chat apps',
+                            ]}
+                            
+                        />
                     </div>
                 </div>
                 </div>

@@ -28,7 +28,7 @@ function Archive() {
     const { siteConfig = {} } = context
     const [visibleCodeExample, showCodeExample] = useState('READ')
     return (
-        <Layout title={`${siteConfig.title}`} description={siteConfig.tagline}>
+        <Layout title="Videos" description={siteConfig.tagline}>
             <main className="ArchivePage" >
                 {/* HEADER */}
                 <header className={classnames('hero full', styles.heroBanner)}>
