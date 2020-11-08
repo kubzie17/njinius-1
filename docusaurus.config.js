@@ -22,7 +22,7 @@ module.exports = {
 
       // Hides the switch in the navbar
       // Useful if you want to support a single color mode
-      disableSwitch: false,
+      disableSwitch: true,
 
       // Should we use the prefers-color-scheme media-query,
       // using user system preferences, instead of the hardcoded defaultMode
@@ -80,25 +80,21 @@ module.exports = {
           position: 'right',
           className: 'navbar-item-pages',
         },
-        { to: '/schedule', label: 'Schedule', position: 'right' },
+        { to: '/docs/doc6', label: 'Schedule', position: 'right' },
         {
           to: '/videos',
           label: 'Videos',
           position: 'right',
         },
-        {
-          to: '/docs/software',
-          label: 'Software',
-          position: 'right',
-        },
+
         {
           to: '/tracks',
           label: 'Tracks',
           position: 'right',
         },
-       // { href: 'https://app.supabase.io', label: 'Login', position: 'right' },
+
         {
-          href: 'https://github.com/supabase/supabase',
+          href: 'https://github.com/njinius',
           className: 'navbar-item-github',
           position: 'right',
         },
@@ -121,33 +117,29 @@ module.exports = {
               to: '/blog',
             },
             {
-              label: 'Open source',
-              to: '/oss',
+              label: 'About Us',
+              to: '/docs/',
             },
             {
-              label: 'Humans.txt',
-              to: 'https://supabase.io/humans.txt',
-            },
-            {
-              label: 'Lawyers.txt',
-              to: 'https://supabase.io/lawyers.txt',
+              label: 'FAQs',
+              to: 'docs/faq',
             },
           ],
         },
         {
-          title: 'Resources',
+          title: 'Legal',
           items: [
             {
-              label: 'Docs',
-              to: '/docs',
+              label: 'Privacy Notice',
+              to: '/docs/legal/privacyNotice',
             },
             {
-              label: 'Pricing',
-              to: '/docs/pricing',
+              label: 'Cookie Policy',
+              to: '/docs/legal/cookiePolicy',
             },
             {
-              label: 'Support',
-              to: '/docs/support',
+              label: 'Disclaimer',
+              to: '/docs/legal/disclaimer',
             },
           ],
         },
@@ -156,28 +148,25 @@ module.exports = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/supabase/supabase',
+              href: 'https://github.com/njinius',
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/supabase_io',
+              href: 'https://twitter.com/njinius1',
             },
             {
-              label: 'DevTo',
-              href: 'https://dev.to/supabase',
+              label: 'Youtube',
+              href: 'https://www.youtube.com/channel/UCmcoHCFEYhuti8aarL3ieUg?view_as=subscriber',
             },
-            // {
-            //   label: "Discord",
-            //   href: "https://discordapp.com/invite/docusaurus"
-            // }
+           
           ],
         },
         {
-          title: 'Alpha',
+          title: 'Slack',
           items: [
             {
-              label: 'Join our alpha',
-              href: 'https://app.supabase.io',
+              label: 'Join our Slack channel',
+              href: 'https://join.slack.com/t/njinius/shared_invite/zt-iyerljia-YZTOp5gabUTBzk1wyTomyw',
             },
           ],
         },

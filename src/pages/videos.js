@@ -14,10 +14,12 @@ import VideoPlayer from 'react-video-js-player';
 import Car from "../../static/videos/car.mp4"
 import Var from "../../static/videos/van.mp4"
 import bik from "../../static/videos/bike.mp4"
+import ReactPlayer from "react-player"
+import Pagination from "react-js-pagination"
 
 
 
-function Archive() {
+function Video() {
     const context = useDocusaurusContext()
     const imgUrl1 = '/static/img/undraw_docusaurus_mountain.svg';
     const imgUrl2 = '/static/img/undraw_docusaurus_react.svg';
@@ -38,12 +40,9 @@ function Archive() {
                             <div className={classnames('row', styles.responsiveCentered)}>
                                 <div className="col col--6 col--offset-3">
                                     <h2 className="">Videos</h2>
-                                    <p className="">Njinius mostly consist of 3 tracks, Business, Software and Bookcase. Pick your track and get involved </p>
+                                    <p className="">Are you more of a visual learner, then look no further. Find the topic of your interest below and and enjoy the turorial </p>
                                 </div>
                             </div>
-
-
-
 
                             <Row>
                                 <Container>
@@ -57,10 +56,10 @@ function Archive() {
                                             border: '1px solid black',
                                             margin: '5px 10px 10px 0px',
                                         }}>
+                                            <ReactPlayer url="https://www.youtube.com/watch?v=HUBNt18RFbo"/>
 
-                                            <VideoPlayer src={videoSrc} poster={imgUrl1} width="270" height="155" />
                                         </div>
-                                        <h6>30/10/2020  25:37</h6>
+                                        
                                         <p className="description">{"The recorded video's description will go on here about the topic that was covered on the date mention above and the duration of the video. The video will either play from youtube or it will be a video within the reporitory"}</p>
 
                                     </div>
@@ -68,12 +67,11 @@ function Archive() {
                                 </Container>
                             </Row>
 
-
-
                             <Row>
                                 <Container>
-                                    <div className="App2">
-                                        <h2>Video 2 title</h2>
+                                    <div className="App">
+
+                                        <h2>Exception Handling</h2>
                                         <div style={{
                                             alignItems: 'center',
                                             display: 'inline',
@@ -81,35 +79,86 @@ function Archive() {
                                             border: '1px solid black',
                                             margin: '5px 10px 10px 0px',
                                         }}>
-                                            <VideoPlayer src={videoSrc2} poster={imgUrl2} width="270" height="155" />
+                                            <ReactPlayer url="https://www.youtube.com/watch?v=HUBNt18RFbo" />
 
                                         </div>
-                                        <h6>30/10/2020  25:37</h6>
-                                        <p className="descript">{"this is the description of the video"}</p>
+                                        
+                                        <p className="description">{"The recorded video's description will go on here about the topic that was covered on the date mention above and the duration of the video. The video will either play from youtube or it will be a video within the reporitory"}</p>
 
                                     </div>
+
                                 </Container>
                             </Row>
 
                             <Row>
                                 <Container>
-                                    <div className="App3">
-                                        <h1>Video 3 title</h1>
-                                        <div
-                                            style={{
-                                                alignItems: 'center',
-                                                display: 'inline',
-                                                float: 'left',
-                                                border: '1px solid black',
-                                                margin: '5px 10px 10px 0px',
-                                            }}>
-                                            <VideoPlayer src={videoSrc3} poster={imgUrl3} width="270" height="155" />
+                                    <div className="App">
+
+                                        <h2>Exception Handling</h2>
+                                        <div style={{
+                                            alignItems: 'center',
+                                            display: 'inline',
+                                            float: 'left',
+                                            border: '1px solid black',
+                                            margin: '5px 10px 10px 0px',
+                                        }}>
+                                            <ReactPlayer url="https://www.youtube.com/watch?v=HUBNt18RFbo" />
+
                                         </div>
-                                        <h6>30/10/2020  25:37</h6>
-                                        <p className="descript">{"this is the description of the video"}</p>
+                                        
+                                        <p className="description">{"The recorded video's description will go on here about the topic that was covered on the date mention above and the duration of the video. The video will either play from youtube or it will be a video within the reporitory"}</p>
+
                                     </div>
+
                                 </Container>
                             </Row>
+
+                            <Row>
+                                <Container>
+                                    <div className="App">
+
+                                        <h2>Exception Handling</h2>
+                                        <div style={{
+                                            alignItems: 'center',
+                                            display: 'inline',
+                                            float: 'left',
+                                            border: '1px solid black',
+                                            margin: '5px 10px 10px 0px',
+                                        }}>
+                                            <ReactPlayer url="https://www.youtube.com/watch?v=HUBNt18RFbo" />
+
+                                        </div>
+                                        
+                                        <p className="description">{"The recorded video's description will go on here about the topic that was covered on the date mention above and the duration of the video. The video will either play from youtube or it will be a video within the reporitory"}</p>
+
+                                    </div>
+
+                                </Container>
+                            </Row>
+
+                            <Row>
+                                <Container>
+                                    <div className="App">
+
+                                        <h2>Exception Handling</h2>
+                                        <div style={{
+                                            alignItems: 'center',
+                                            display: 'inline',
+                                            float: 'left',
+                                            border: '1px solid black',
+                                            margin: '5px 10px 10px 0px',
+                                        }}>
+                                            <ReactPlayer url="https://www.youtube.com/watch?v=HUBNt18RFbo" />
+
+                                        </div>
+                                        
+                                        <p className="description">{"The recorded video's description will go on here about the topic that was covered on the date mention above and the duration of the video. The video will either play from youtube or it will be a video within the reporitory"}</p>
+
+                                    </div>
+
+                                </Container>
+                            </Row>
+                            
                         </div>
                     </section>
                 </header>
@@ -118,4 +167,4 @@ function Archive() {
     )
 }
 
-export default Archive
+export default Video
