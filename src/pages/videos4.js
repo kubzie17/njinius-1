@@ -49,19 +49,28 @@ function Video4() {
                                     <div className="App">
 
                                         <h2>Pointers</h2>
-                                        <div style={{
-                                            alignItems: 'center',
+                                        <div className={styles.videoContainer} 
+                                            style={{alignItems: 'center',
                                             display: 'inline',
                                             float: 'left',
                                             border: '1px solid black',
-                                            margin: '5px 10px 10px 0px',
-                                        }}>
-                                            <ReactPlayer url="https://www.youtube.com/watch?v=DTxHyVn0ODg "/>
-
+                                            margin: '5px 10px 10px 0px',}} >
+                                            <iframe width="560" height="315" src='https://www.youtube.com/embed/DTxHyVn0ODg'
+                                                frameborder='0'
+                                                allow='autoplay; encrypted-media; accelerometer; gyroscope; picture-in-picture'
+                                                allowfullscreen
+                                                title='video'
+                                            />
                                         </div>
+                                        <h6>What are Pointers?</h6>
+                                        <p className="description">
+                                            Pointers are special variables in programming that are used to store addresses,  rather than values, of other variables.
+                                            Unlike other variables that hold values of a certain type, pointer holds the address of a variable. For example, an integer variable 
+                                            holds (or you can say stores) an integer value, however an integer pointer holds the address of a integer variable.
+                                            Pointers are mostly used when theres a need to optimise the programme to run faster and use less memory and provides a degree of control
+                                            over use of memory. 
+                                        </p>
                                         
-                                        <p className="description">{"The recorded video's description will go on here about the topic that was covered on the date mention above and the duration of the video. The video will either play from youtube or it will be a video within the reporitory"}</p>
-
                                     </div>
 
                                 </Container>
@@ -72,19 +81,25 @@ function Video4() {
                                     <div className="App">
 
                                         <h2>Polymorphism</h2>
-                                        <div style={{
-                                            alignItems: 'center',
+                                        <div className={styles.videoContainer} 
+                                            style={{alignItems: 'center',
                                             display: 'inline',
                                             float: 'left',
                                             border: '1px solid black',
-                                            margin: '5px 10px 10px 0px',
-                                        }}>
-                                            <ReactPlayer url="https://www.youtube.com/watch?v=bP-Trkf8hNA" />
-
+                                            margin: '5px 10px 10px 0px',}} >
+                                            <iframe width="560" height="315" src='https://www.youtube.com/embed/bP-Trkf8hNA'
+                                                frameborder='0'
+                                                allow='autoplay; encrypted-media; accelerometer; gyroscope; picture-in-picture'
+                                                allowfullscreen
+                                                title='video'
+                                            />
                                         </div>
+                                        <h6>What is Polymorph?</h6>
+                                        <p className="description">
+                                            Polymorphism in programming, is the ability of of an object to on many forms. Polymorphic code allows a program to process 
+                                            objects diffarently depending on their data type or class, with the ability to redefine methods for derived classes
+                                        </p>
                                         
-                                        <p className="description">{"The recorded video's description will go on here about the topic that was covered on the date mention above and the duration of the video. The video will either play from youtube or it will be a video within the reporitory"}</p>
-
                                     </div>
 
                                 </Container>
@@ -95,19 +110,25 @@ function Video4() {
                                     <div className="App">
 
                                         <h2>Property</h2>
-                                        <div style={{
-                                            alignItems: 'center',
+                                        <div className={styles.videoContainer} 
+                                            style={{alignItems: 'center',
                                             display: 'inline',
                                             float: 'left',
                                             border: '1px solid black',
-                                            margin: '5px 10px 10px 0px',
-                                        }}>
-                                            <ReactPlayer url="https://www.youtube.com/watch?v=gvQziNULkdY" />
-
+                                            margin: '5px 10px 10px 0px',}} >
+                                            <iframe width="560" height="315" src='https://www.youtube.com/embed/gvQziNULkdY'
+                                                frameborder='0'
+                                                allow='autoplay; encrypted-media; accelerometer; gyroscope; picture-in-picture'
+                                                allowfullscreen
+                                                title='video'
+                                            />
                                         </div>
+                                        <h6>What are Properties?</h6>
+                                        <p className="description">
+                                            Properties, also known as getters and setters, allow us to controll how a variable is accesed and changed. The g"getter" retreives values and "setters"
+                                            set them. These usual have no side effects.
+                                        </p>
                                         
-                                        <p className="description">{"The recorded video's description will go on here about the topic that was covered on the date mention above and the duration of the video. The video will either play from youtube or it will be a video within the reporitory"}</p>
-
                                     </div>
 
                                 </Container>
@@ -118,19 +139,29 @@ function Video4() {
                                     <div className="App">
 
                                         <h2>Reference</h2>
-                                        <div style={{
-                                            alignItems: 'center',
+                                        <div className={styles.videoContainer} 
+                                            style={{alignItems: 'center',
                                             display: 'inline',
                                             float: 'left',
                                             border: '1px solid black',
-                                            margin: '5px 10px 10px 0px',
-                                        }}>
-                                            <ReactPlayer url="https://www.youtube.com/watch?v=IzoFn3dfsPA&t=26s" />
-
+                                            margin: '5px 10px 10px 0px',}} >
+                                            <iframe width="560" height="315" src='https://www.youtube.com/embed/IzoFn3dfsPA'
+                                                frameborder='0'
+                                                allow='autoplay; encrypted-media; accelerometer; gyroscope; picture-in-picture'
+                                                allowfullscreen
+                                                title='video'
+                                            />
                                         </div>
+                                        <h6>What is a Reference?</h6>
+                                        <p className="description">
+                                            A reference is essentiall an address which points to where something, and object or variable, is stored. When we assign an object to a 
+                                            variable, in essence we are actually 
+                                            assigning a reference a reference to tha variable, to the object. These are mostly used when passing an object to a function. If objects 
+                                            werent passed by reference, when a new copy is created, it will consume alot of CPU time and memowy
+                                            of which wil be a watse. using references avoids this. 
+                                            
+                                        </p>
                                         
-                                        <p className="description">{"The recorded video's description will go on here about the topic that was covered on the date mention above and the duration of the video. The video will either play from youtube or it will be a video within the reporitory"}</p>
-
                                     </div>
 
                                 </Container>
@@ -141,18 +172,29 @@ function Video4() {
                                     <div className="App">
 
                                         <h2>Switch Statement</h2>
-                                        <div style={{
-                                            alignItems: 'center',
+                                        <div className={styles.videoContainer} 
+                                            style={{alignItems: 'center',
                                             display: 'inline',
                                             float: 'left',
                                             border: '1px solid black',
-                                            margin: '5px 10px 10px 0px',
-                                        }}>
-                                            <ReactPlayer url="https://www.youtube.com/watch?v=HUBNt18RFbo" />
-
+                                            margin: '5px 10px 10px 0px',}} >
+                                            <iframe width="560" height="315" src='https://www.youtube.com/embed/HUBNt18RFbo'
+                                                frameborder='0'
+                                                allow='autoplay; encrypted-media; accelerometer; gyroscope; picture-in-picture'
+                                                allowfullscreen
+                                                title='video'
+                                            />
                                         </div>
-                                        
-                                        <p className="description">{"The recorded video's description will go on here about the topic that was covered on the date mention above and the duration of the video. The video will either play from youtube or it will be a video within the reporitory"}</p>
+                                        <h6>What is a Switch Statement?</h6>
+                                        <p className="description">
+                                            Switch statements are a block of code which allow the programme to compare a value or case with multiple value or cases.
+                                            when a matching case is found, then the associated block of code to said case is then executed. Each of the cases or values
+                                            within the switch statement is called an identifier, which is the one compared to against the value provided to the switch statement.
+                                            Switch statement are usually used in place of "if-else" statement. This is because with "if-else" statements, complexity of the code is 
+                                            increased when the number of options is increased, leading to a difficult to read code. The Switch statement simplifies this.
+                                        </p>
+                
+
 
                                     </div>
 
@@ -163,6 +205,16 @@ function Video4() {
                     </section>
                 </header>
             </main>
+            <Link
+                    className={classnames(
+                      'button hero--button button--md button--secondary button--outline responsive-button',
+                      styles.button
+                    )}
+                    to={useBaseUrl('/videos3')}
+                    style={{ marginLeft: 200, marginTop: 10, float: "center" }}
+                  >
+                    Previous
+                  </Link>
         </Layout >
     )
 }

@@ -942,9 +942,11 @@ html[data-theme='dark'] .navbar-item-github:before {
 }
 
 .njinius{
-  margin-left: 50px;
+  align-items: center;
+  justify-content: center;
 }
 
 .aboutlogo{
-  margin-left: 50px;
+  align-items: center;
+  justify-content: center;
 }

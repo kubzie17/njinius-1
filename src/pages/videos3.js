@@ -49,19 +49,25 @@ function Video3() {
                                     <div className="App">
 
                                         <h2>Loops</h2>
-                                        <div style={{
-                                            alignItems: 'center',
+                                        <div className={styles.videoContainer} 
+                                            style={{alignItems: 'center',
                                             display: 'inline',
                                             float: 'left',
                                             border: '1px solid black',
-                                            margin: '5px 10px 10px 0px',
-                                        }}>
-                                            <ReactPlayer url="https://www.youtube.com/watch?v=_1AwR-un4Hk"/>
-
+                                            margin: '5px 10px 10px 0px',}} >
+                                            <iframe width="560" height="315" src='https://www.youtube.com/embed/_1AwR-un4Hk'
+                                                frameborder='0'
+                                                allow='autoplay; encrypted-media; accelerometer; gyroscope; picture-in-picture'
+                                                allowfullscreen
+                                                title='video'
+                                            />
                                         </div>
-                                        
-                                        <p className="description">{"The recorded video's description will go on here about the topic that was covered on the date mention above and the duration of the video. The video will either play from youtube or it will be a video within the reporitory"}</p>
-
+                                        <h6>What are Loops?</h6>
+                                        <p className="description">
+                                            A loop is a pice of code which repeats the same sequence of code until a specific predefined condition is met. Several things can be done while reapeating
+                                            a loop, including but not limited to adding sums, cycle through values, repeat function amongst other things
+                                            There are three kind of loops, For loops, While Lopps and Do-while loop. Which loop is used is dependant on what is required for that loop.
+                                        </p>
                                     </div>
 
                                 </Container>
@@ -71,20 +77,28 @@ function Video3() {
                                 <Container>
                                     <div className="App">
 
-                                        <h2>Member Initialisation</h2>
-                                        <div style={{
-                                            alignItems: 'center',
+                                    <h2>Member Initialisation</h2>
+                                        <div className={styles.videoContainer} 
+                                            style={{alignItems: 'center',
                                             display: 'inline',
                                             float: 'left',
                                             border: '1px solid black',
-                                            margin: '5px 10px 10px 0px',
-                                        }}>
-                                            <ReactPlayer url="https://www.youtube.com/watch?v=dNklocMxddU" />
+                                            margin: '5px 10px 10px 0px',}} >
+                                            <iframe width="560" height="315" src='https://www.youtube.com/embed/dNklocMxddU'
+                                                frameborder='0'
+                                                allow='autoplay; encrypted-media; accelerometer; gyroscope; picture-in-picture'
+                                                allowfullscreen
+                                                title='video'
+                                            />
+                                        </div>  
+                                        <h6>What is Member Initialisation</h6>
+                                        <p className="description">
+                                            A member is basically anything in the class, anything in the class is the member of teh class. Member initialisation is when the data 
+                                            members of the class have been initialised. The list of members to be initialized is indicated with constructor as a comma-separated 
+                                            list followed by a colon
+                                        </p>
 
-                                        </div>
-                                        
-                                        <p className="description">{"The recorded video's description will go on here about the topic that was covered on the date mention above and the duration of the video. The video will either play from youtube or it will be a video within the reporitory"}</p>
-
+                                    
                                     </div>
 
                                 </Container>
@@ -95,19 +109,24 @@ function Video3() {
                                     <div className="App">
 
                                         <h2>Methods</h2>
-                                        <div style={{
-                                            alignItems: 'center',
+                                        <div className={styles.videoContainer} 
+                                            style={{alignItems: 'center',
                                             display: 'inline',
                                             float: 'left',
                                             border: '1px solid black',
-                                            margin: '5px 10px 10px 0px',
-                                        }}>
-                                            <ReactPlayer url="https://www.youtube.com/watch?v=Ya4rxEfb2BQ" />
-
+                                            margin: '5px 10px 10px 0px',}} >
+                                            <iframe width="560" height="315" src='https://www.youtube.com/embed/Ya4rxEfb2BQ'
+                                                frameborder='0'
+                                                allow='autoplay; encrypted-media; accelerometer; gyroscope; picture-in-picture'
+                                                allowfullscreen
+                                                title='video'
+                                            />
                                         </div>
-                                        
-                                        <p className="description">{"The recorded video's description will go on here about the topic that was covered on the date mention above and the duration of the video. The video will either play from youtube or it will be a video within the reporitory"}</p>
-
+                                        <h6>What are Methods?</h6>
+                                        <p className="description">
+                                        A method in object-oriented programming is a procedure associated with a class. A method defines the behavior of the objects 
+                                        that are created from the class. Another way to say this is that a method is an action that an object is able to perform
+                                        </p>
                                     </div>
 
                                 </Container>
@@ -117,20 +136,26 @@ function Video3() {
                                 <Container>
                                     <div className="App">
 
-                                        <h2>Overloads</h2>
-                                        <div style={{
-                                            alignItems: 'center',
+                                        <h2>Function Overloads</h2>
+                                        <div className={styles.videoContainer} 
+                                            style={{alignItems: 'center',
                                             display: 'inline',
                                             float: 'left',
                                             border: '1px solid black',
-                                            margin: '5px 10px 10px 0px',
-                                        }}>
-                                            <ReactPlayer url="https://www.youtube.com/watch?v=IAMzWp3kS_k" />
-
-                                        </div>
-                                        
-                                        <p className="description">{"The recorded video's description will go on here about the topic that was covered on the date mention above and the duration of the video. The video will either play from youtube or it will be a video within the reporitory"}</p>
-
+                                            margin: '5px 10px 10px 0px',}} >
+                                            <iframe width="560" height="315" src='https://www.youtube.com/embed/IAMzWp3kS_k'
+                                                frameborder='0'
+                                                allow='autoplay; encrypted-media; accelerometer; gyroscope; picture-in-picture'
+                                                allowfullscreen
+                                                title='video'
+                                            />
+                                        </div>        
+                                        <h6>What are Overloads?</h6>
+                                        <p className="description">
+                                            Overloads or overloading is creating two or more members or functions with the exact ame name, only differing in either the number 
+                                            of parameters each one takes, or the type of parameters each one takes. These diffarences ar the only way the compililer can 
+                                            diffarentiate between the functions
+                                        </p>
                                     </div>
 
                                 </Container>
@@ -141,19 +166,24 @@ function Video3() {
                                     <div className="App">
 
                                         <h2>Pass By Reference</h2>
-                                        <div style={{
-                                            alignItems: 'center',
+                                        <div className={styles.videoContainer} 
+                                            style={{alignItems: 'center',
                                             display: 'inline',
                                             float: 'left',
                                             border: '1px solid black',
-                                            margin: '5px 10px 10px 0px',
-                                        }}>
-                                            <ReactPlayer url="https://www.youtube.com/watch?v=_ja8iizm7nk" />
-
+                                            margin: '5px 10px 10px 0px',}} >
+                                            <iframe width="560" height="315" src='https://www.youtube.com/embed/_ja8iizm7nk'
+                                                frameborder='0'
+                                                allow='autoplay; encrypted-media; accelerometer; gyroscope; picture-in-picture'
+                                                allowfullscreen
+                                                title='video'
+                                            />
                                         </div>
-                                        
-                                        <p className="description">{"The recorded video's description will go on here about the topic that was covered on the date mention above and the duration of the video. The video will either play from youtube or it will be a video within the reporitory"}</p>
-
+                                        <h6>What is Pass By Reference?</h6>
+                                        <p className="description">
+                                        Passing by by reference refers to a method of passing the address of an argument in the calling function to a corresponding 
+                                        parameter in the called function. This allows the value of the argument in the calling function to be modified by the called function.
+                                        </p>
                                     </div>
 
                                 </Container>
@@ -163,6 +193,26 @@ function Video3() {
                     </section>
                 </header>
             </main>
+            <Link
+                    className={classnames(
+                      'button hero--button button--md button--secondary button--outline responsive-button',
+                      styles.button
+                    )}
+                    to={useBaseUrl('/videos2')}
+                    style={{ marginLeft: 200, marginTop: 10 }}
+                  >
+                    Previous
+            </Link>
+            <Link style={{position: "left", justifycontent: "right"}}
+                    className={classnames(
+                      'button hero--button button--md button--secondary button--outline responsive-button',
+                      styles.button, 
+                    )}
+                    to={useBaseUrl('/videos4')}
+                    style={{ marginRight: 200, marginTop: 10, float: "right" }}
+                  >
+                    Next
+            </Link>
         </Layout >
     )
 }
