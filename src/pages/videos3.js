@@ -19,7 +19,7 @@ import Pagination from "react-js-pagination"
 
 
 
-function Video() {
+function Video3() {
     const context = useDocusaurusContext()
     const imgUrl1 = '/static/img/undraw_docusaurus_mountain.svg';
     const imgUrl2 = '/static/img/undraw_docusaurus_react.svg';
@@ -48,7 +48,7 @@ function Video() {
                                 <Container>
                                     <div className="App">
 
-                                        <h2>Abstraction</h2>
+                                        <h2>Loops</h2>
                                         <div style={{
                                             alignItems: 'center',
                                             display: 'inline',
@@ -56,7 +56,7 @@ function Video() {
                                             border: '1px solid black',
                                             margin: '5px 10px 10px 0px',
                                         }}>
-                                            <ReactPlayer url="https://www.youtube.com/watch?v=ZJocPKDVQSc"/>
+                                            <ReactPlayer url="https://www.youtube.com/watch?v=_1AwR-un4Hk"/>
 
                                         </div>
                                         
@@ -71,7 +71,7 @@ function Video() {
                                 <Container>
                                     <div className="App">
 
-                                        <h2>Access Modifiers</h2>
+                                        <h2>Member Initialisation</h2>
                                         <div style={{
                                             alignItems: 'center',
                                             display: 'inline',
@@ -79,7 +79,7 @@ function Video() {
                                             border: '1px solid black',
                                             margin: '5px 10px 10px 0px',
                                         }}>
-                                            <ReactPlayer url="https://www.youtube.com/watch?v=5Z2g78DSxPs" />
+                                            <ReactPlayer url="https://www.youtube.com/watch?v=dNklocMxddU" />
 
                                         </div>
                                         
@@ -94,7 +94,7 @@ function Video() {
                                 <Container>
                                     <div className="App">
 
-                                        <h2>Arrays</h2>
+                                        <h2>Methods</h2>
                                         <div style={{
                                             alignItems: 'center',
                                             display: 'inline',
@@ -102,7 +102,7 @@ function Video() {
                                             border: '1px solid black',
                                             margin: '5px 10px 10px 0px',
                                         }}>
-                                            <ReactPlayer url="https://www.youtube.com/watch?v=1kLw8kZuccQ" />
+                                            <ReactPlayer url="https://www.youtube.com/watch?v=Ya4rxEfb2BQ" />
 
                                         </div>
                                         
@@ -117,7 +117,7 @@ function Video() {
                                 <Container>
                                     <div className="App">
 
-                                        <h2>Class Methods</h2>
+                                        <h2>Overloads</h2>
                                         <div style={{
                                             alignItems: 'center',
                                             display: 'inline',
@@ -125,7 +125,7 @@ function Video() {
                                             border: '1px solid black',
                                             margin: '5px 10px 10px 0px',
                                         }}>
-                                            <ReactPlayer url="https://www.youtube.com/watch?v=2BP8NhxjrO0" />
+                                            <ReactPlayer url="https://www.youtube.com/watch?v=IAMzWp3kS_k" />
 
                                         </div>
                                         
@@ -140,7 +140,7 @@ function Video() {
                                 <Container>
                                     <div className="App">
 
-                                        <h2>Constructors</h2>
+                                        <h2>Pass By Reference</h2>
                                         <div style={{
                                             alignItems: 'center',
                                             display: 'inline',
@@ -148,7 +148,7 @@ function Video() {
                                             border: '1px solid black',
                                             margin: '5px 10px 10px 0px',
                                         }}>
-                                            <ReactPlayer url="https://www.youtube.com/watch?v=_b7odUc7lg0" />
+                                            <ReactPlayer url="https://www.youtube.com/watch?v=_ja8iizm7nk" />
 
                                         </div>
                                         
@@ -167,4 +167,4 @@ function Video() {
     )
 }
 
-export default Video
+export default Video3
