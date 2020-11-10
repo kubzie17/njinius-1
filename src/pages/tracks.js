@@ -37,7 +37,7 @@ function Archive() {
                     <div>
                         <Link
                             to={useBaseUrl('docs')}>
-                            <img className="diagram" src="/static/img/business.png"  height="261.06" width="348"/>
+                            <img className="diagram" src="/static/img/businesstrack.jpg"  height="261.06" width="348"/>
                         </Link>
                     </div>
                    
@@ -61,7 +61,7 @@ function Archive() {
                     <div>
                         <Link
                             to={useBaseUrl('docs')}>
-                            <img className="diagram" src="/static/img/software.jpeg"  height="261.06" width="348"/>
+                            <img className="diagram" src="/static/img/softwaretrack.jpg"  height="261.06" width="348"/>
                         </Link>
                     </div>
 
@@ -84,7 +84,7 @@ function Archive() {
                     <div>
                         <Link
                             to={useBaseUrl('docs')}>
-                            <img className="diagram" src="/static/img/book.jpg"  height="261.06" width="348"/>
+                            <img className="diagram" src="/static/img/bookClub2.jpg"  height="261.06" width="348"/>
                         </Link>
                     </div>
                     <div>
