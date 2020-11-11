@@ -19,6 +19,7 @@ module.exports = {
           type: 'category',
           label: 'Software',
           items:[
+            'track/software/index',
             'track/software/forLoop',
             'track/software/functionsAndParameters',
             'track/software/inheritance',
@@ -46,7 +47,7 @@ module.exports = {
           type: 'category',
           label: 'business',
           items: [
-            
+            'track/business/index',
             'track/business/entrepreneur',
             'track/business/marketing',
             'track/business/strategicPlanning',

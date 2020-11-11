@@ -10,6 +10,7 @@ import CustomCodeBlock from '../components/CustomCodeBlock'
 import GithubCard from '../components/GithubCard'
 import HowCard from '../components/HowCard'
 import { repos } from '../data/github'
+import 'react-tabs/style/react-tabs.css'
 
 const heroExample = `
 const messages = Njinius
