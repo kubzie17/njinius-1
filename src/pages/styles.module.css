@@ -22,8 +22,9 @@
   min-height: 80vh;
   background-color: white;
   border-top: white;
-  margin-top: -100px;
-  padding-bottom: 5;
+  margin-bottom: -100px;
+  margin-top: -50px;
+
 }
 .hero .code-with-header {
   box-shadow:  0 0 5px 5px rgba(0, 0, 0, 0.3);
@@ -52,6 +53,7 @@
   align-items: center;
   padding: 2rem 0;
   width: 100%;
+  padding-top: 50px;
 }
 
 .forDevelopers .button {
