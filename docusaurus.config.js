@@ -81,6 +81,7 @@ module.exports = {
           className: 'navbar-item-pages',
         },
         { to: '/docs/doc6', label: 'Schedule', position: 'right' },
+       
         {
           to: '/videos',
           label: 'Videos',

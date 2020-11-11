@@ -5,6 +5,7 @@ import Link from '@docusaurus/Link'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import useBaseUrl from '@docusaurus/useBaseUrl'
 import styles from './styles.module.css'
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 import CustomCodeBlock from '../components/CustomCodeBlock'
 import GithubCard from '../components/GithubCard'
 import HowCard from '../components/HowCard'
@@ -25,7 +26,7 @@ const newMessages = supabase
 `.trim()
 const subscribeExample = `
 
-hello  is some hype talk about software
+hello  is some hype talk about business
 
 
 
@@ -107,6 +108,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
 `.trim()
 
 const umdExample = `
+bookd club
 <script src="https://unpkg.com/@supabase/supabase-js/umd/supabase.js"></script>
 
 <script>
@@ -203,7 +205,7 @@ function Home() {
                 
                 <h2 className="hero__title">Welcome to NJinius Hub where iron sharpens iron...</h2>
                 <p className="hero__subtitle">
-                <p>Join us and do something NJinius!</p>
+                <p>Njinius is a one stop shop for a variety of knowledge between the channels of software, business and book clubs. Find the track right for you and induldge in a world of learning, or even shar your knowledge and expertise. So come, join us and lets do something NJinius!</p>
                 </p>
                 
               </div>
@@ -228,7 +230,7 @@ function Home() {
                 
               </div>
               <div className="col col--7">
-              <h2 className="hero__title" style={{ marginLeft: 200}}>{siteConfig.tagline}</h2>
+              <h2 className="hero__title" style={{ textAlign: "center"}}>{siteConfig.tagline}</h2>
                 <p className="hero__subtitle">
                 <p>NJinius was created to help people of all ability levels develop their understanding of programming and business. We are creating a community of like-minded individuals who seek to expand and develop a 360 understanding of their respective industry. 
                     We hold workshops, tutorials and discussions in many different subject areas for this purpose, offering a relaxed environment to learn and develop new skills.</p>
@@ -372,7 +374,55 @@ function Home() {
                   </p>
                 </div>
               </div>
-              <div className="ForDevelopers">
+              <Tabs>
+                <TabList>
+                    <Tab>Software</Tab>
+                    <Tab >Business</Tab>
+                    <Tab>Book Club</Tab>
+                </TabList>
+
+                <TabPanel>
+                    <p>
+                    NJinius was created to help people, all ability levels develop their understanding 
+                    of programming and business. We are creating a community of like-minded individuals who seek to 
+                    expand and develop a 360 understanding of their respective industry. We hold workshops, tutorials 
+                    and discussions in many different subject areas for this purpose, offering a relaxed environment 
+                    to learn and develop new skills.
+                    </p>
+                    
+                </TabPanel>
+                <TabPanel>
+                    <p>
+                        <b>Luigi</b> (<i>Japanese: ルイージ Hepburn: Ruīji, [ɾɯ.iː.dʑi̥]</i>) (<i>English: /luˈiːdʒi/;
+                        Italian: [luˈiːdʒi]</i>) is a fictional character featured in video games and related media
+                        released by Nintendo. Created by prominent game designer Shigeru Miyamoto, Luigi is portrayed
+                        as the slightly younger but taller fraternal twin brother of Nintendo's mascot Mario, and
+                        appears in many games throughout the Mario franchise, often as a sidekick to his brother.
+                    </p>
+                    <p>
+                        Source:{' '}
+                        <a href="https://en.wikipedia.org/wiki/Luigi" target="_blank">
+                            Wikipedia</a>
+                    </p>
+                </TabPanel>
+                <TabPanel>
+                    <p>
+                        <b>Princess Peach</b> (<i>Japanese: ピーチ姫 Hepburn: Pīchi-hime, [piː.tɕi̥ çi̥.me]</i>)
+                            is a character in Nintendo's Mario franchise. Originally created by Shigeru Miyamoto,
+                            Peach is the princess of the fictional Mushroom Kingdom, which is constantly under
+                            attack by Bowser. She often plays the damsel in distress role within the series and
+                            is the lead female. She is often portrayed as Mario's love interest and has appeared
+                            in Super Princess Peach, where she is the main playable character.
+                    </p>
+                    <p>
+                        Source:{' '}
+                        <a href="https://en.wikipedia.org/wiki/Princess_Peach" target="_blank">
+                            Wikipedia</a>
+                    </p>
+                </TabPanel>
+               
+            </Tabs>
+              {/* <div className="ForDevelopers">
                 <div className="row">
                   <div className="ButtonTabs col col--3">
                     <div>
@@ -382,7 +432,7 @@ function Home() {
                         }`}
                         onClick={() => showCodeExample('READ')}
                       >
-                        Software Workshops
+                        Software
                       </button>
                       <button
                         className={`button button--${
@@ -390,7 +440,7 @@ function Home() {
                         }`}
                         onClick={() => showCodeExample('SUBSCRIBE')}
                       >
-                        Business Workshops
+                        Business
                       </button>
                       <button
                         className={`button button--${
@@ -398,25 +448,25 @@ function Home() {
                         }`}
                         onClick={() => showCodeExample('UMD')}
                       >
-                        Book Clubs
+                        Book Club
                       </button>
                     </div>
                   </div>
                   <div className="col col--9 code-with-header">
                     {visibleCodeExample === 'READ' && (
                       <CustomCodeBlock
-                        header="Get all public rooms and their messages"
+                        header="A step into the software world"
                         js={readExample}
                       />
                     )}
                     {visibleCodeExample === 'SUBSCRIBE' && (
                       <CustomCodeBlock
-                        header="Receive realtime messages in an example chat room"
+                        header="Share and exchange business expertise"
                         js={subscribeExample}
                       />
                     )}
                     {visibleCodeExample === 'CREATE' && (
-                      <CustomCodeBlock header="Create a new chat room" js={createExample} />
+                      <CustomCodeBlock header="Feed the ming with a variety of books" js={createExample} />
                     )}
                     {visibleCodeExample === 'UPDATE' && (
                       <CustomCodeBlock header="Update a user" js={updateExample} />
@@ -428,11 +478,11 @@ function Home() {
                       />
                     )}
                     {visibleCodeExample === 'UMD' && (
-                      <CustomCodeBlock header="Supabase-js standalone bundle" js={umdExample} />
+                      <CustomCodeBlock header="Feed the ming with a variety of books" js={umdExample} />
                     )}
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </section>
 
