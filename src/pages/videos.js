@@ -5,6 +5,7 @@ import Link from '@docusaurus/Link'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import useBaseUrl from '@docusaurus/useBaseUrl'
 import styles from './styles.module.css'
+import vidStyles from './video.css'
 import CustomCodeBlock from '../components/CustomCodeBlock'
 import GithubCard from '../components/GithubCard'
 import HowCard from '../components/HowCard'
@@ -50,17 +51,17 @@ function Video() {
                                     <div className="App">
 
                                         <h2>Abstraction</h2>
-                                        <div className={styles.videoContainer} 
+                                        <div className={vidStyles.videoContainer} 
                                             style={{alignItems: 'center',
                                             display: 'inline',
                                             float: 'left',
                                             border: '1px solid black',
-                                            margin: '5px 10px 10px 0px',}} >
+                                            margin: '5px 10px 10px 0px',}} 
+                                            >
                                             <iframe width="560" height="315" src='https://www.youtube.com/embed/E7wJTI-1dvQ'
                                                 frameborder='0'
                                                 allow='autoplay; encrypted-media; accelerometer; gyroscope; picture-in-picture'
                                                 allowfullscreen
-                                                title='video'
                                             />
                                         </div>
                                         <h6>What is Abstraction?</h6>
@@ -80,7 +81,7 @@ function Video() {
                                     <div className="App">
 
                                         <h2>Access Modifiers</h2>
-                                        <div className={styles.videoContainer} 
+                                        <div className={vidStyles.videoContainer} 
                                             style={{alignItems: 'center',
                                             display: 'inline',
                                             float: 'left',
@@ -109,7 +110,7 @@ function Video() {
                                     <div className="App">
 
                                         <h2>Arrays</h2>
-                                        <div className={styles.videoContainer} 
+                                        <div className={vidStyles.videoContainer} 
                                             style={{alignItems: 'center',
                                             display: 'inline',
                                             float: 'left',
@@ -139,7 +140,7 @@ function Video() {
                                     <div className="App">
 
                                         <h2>Classes</h2>
-                                        <div className={styles.videoContainer} 
+                                        <div className={vidStyles.videoContainer} 
                                             style={{alignItems: 'center',
                                             display: 'inline',
                                             float: 'left',
@@ -169,7 +170,7 @@ function Video() {
                                     <div className="App">
 
                                         <h2>Constructors</h2>
-                                        <div className={styles.videoContainer} 
+                                        <div className={vidStyles.videoContainer} 
                                             style={{alignItems: 'center',
                                             display: 'inline',
                                             float: 'left',
