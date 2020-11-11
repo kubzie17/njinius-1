@@ -36,7 +36,7 @@ function Archive() {
                 <div className={'col col--4 '}>
                     <div>
                         <Link
-                            to={useBaseUrl('docs')}>
+                            to={useBaseUrl('docs/track/business/index')}>
                             <img className="diagram" src="/static/img/businesstrack.jpg"  height="261.06" width="348"/>
                         </Link>
                     </div>
@@ -60,7 +60,7 @@ function Archive() {
                 <div className={'col col--4 '}>
                     <div>
                         <Link
-                            to={useBaseUrl('docs')}>
+                            to={useBaseUrl('docs/track/software/index')}>
                             <img className="diagram" src="/static/img/softwaretrack.jpg"  height="261.06" width="348"/>
                         </Link>
                     </div>
@@ -83,7 +83,7 @@ function Archive() {
 
                     <div>
                         <Link
-                            to={useBaseUrl('docs')}>
+                            to={useBaseUrl('docs/track/bookClub/index')}>
                             <img className="diagram" src="/static/img/bookClub2.jpg"  height="261.06" width="348"/>
                         </Link>
                     </div>
