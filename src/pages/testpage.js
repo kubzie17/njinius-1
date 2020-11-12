@@ -25,9 +25,9 @@ function Hello() {
             </div>
             <div className={styles.videoContainer}>
                 <iframe width="560" height="315" src='https://www.youtube.com/embed/E7wJTI-1dvQ'
-                    frameborder='0'
+                    frameBorder='0'
                     allow='autoplay; encrypted-media; accelerometer; gyroscope; picture-in-picture'
-                    allowfullscreen
+                    allowFullScreen
                     title='video'
                 />
 

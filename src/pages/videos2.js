@@ -56,9 +56,9 @@ function Video2() {
                                             border: '1px solid black',
                                             margin: '5px 10px 10px 0px',}} >
                                             <iframe width="560" height="315" src='https://www.youtube.com/embed/eyB2Ikcc5oI'
-                                                frameborder='0'
+                                                frameBorder='0'
                                                 allow='autoplay; encrypted-media; accelerometer; gyroscope; picture-in-picture'
-                                                allowfullscreen
+                                                allowFullScreen
                                                 title='video'
                                             />
                                         </div>
@@ -85,9 +85,9 @@ function Video2() {
                                             border: '1px solid black',
                                             margin: '5px 10px 10px 0px',}} >
                                             <iframe width="560" height="315" src='https://www.youtube.com/embed/D8cWquReFqw'
-                                                frameborder='0'
+                                                frameBorder='0'
                                                 allow='autoplay; encrypted-media; accelerometer; gyroscope; picture-in-picture'
-                                                allowfullscreen
+                                                allowFullScreen
                                                 title='video'
                                             />
                                         </div>
@@ -113,9 +113,9 @@ function Video2() {
                                             border: '1px solid black',
                                             margin: '5px 10px 10px 0px',}} >
                                             <iframe width="560" height="315" src='https://www.youtube.com/embed/EyXXLpFriMc'
-                                                frameborder='0'
+                                                frameBorder='0'
                                                 allow='autoplay; encrypted-media; accelerometer; gyroscope; picture-in-picture'
-                                                allowfullscreen
+                                                allowFullScreen
                                                 title='video'
                                             />
                                         </div>
@@ -143,9 +143,9 @@ function Video2() {
                                             border: '1px solid black',
                                             margin: '5px 10px 10px 0px',}} >
                                             <iframe width="560" height="315" src='https://www.youtube.com/embed/fQ_CBGVfGbM'
-                                                frameborder='0'
+                                                frameBorder='0'
                                                 allow='autoplay; encrypted-media; accelerometer; gyroscope; picture-in-picture'
-                                                allowfullscreen
+                                                allowFullScreen
                                                 title='video'
                                             />
                                         </div>
@@ -172,9 +172,9 @@ function Video2() {
                                             border: '1px solid black',
                                             margin: '5px 10px 10px 0px',}} >
                                             <iframe width="560" height="315" src='https://www.youtube.com/embed/X8nYM8wdNRE'
-                                                frameborder='0'
+                                                frameBorder='0'
                                                 allow='autoplay; encrypted-media; accelerometer; gyroscope; picture-in-picture'
-                                                allowfullscreen
+                                                allowFullScreen
                                                 title='video'
                                             />
                                         </div>
