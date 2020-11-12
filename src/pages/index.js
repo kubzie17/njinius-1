@@ -116,7 +116,7 @@ function Home() {
                       <br></br>
                       <br></br>
                       <br></br>
-                      <Card.Text >Some intro about what Software Track is about. typing this longer to be able to test the responsivenes on mobile view</Card.Text>
+                      <Card.Text >Some intro about what Software Track is about. typing this longer to be able to test the responsivenes on mobile </Card.Text>
                       <br></br>
                       <Link to={useBaseUrl('docs/track/software/index')}>
                         <Button variant="primary" to='docs/track/business/index' block>read more</Button>
