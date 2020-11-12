@@ -1,7 +1,7 @@
 ---
 id: subscribe
 title: 'Subscribing'
-description: 'Subscribe to realtime changes in your database with Supabase'
+description: 'Subscribe to realtime changes in your database with njinius'
 ---
 
 import DummyData from '../common/_DummyData.mdx'
@@ -122,7 +122,7 @@ You will not be able to delete data from your database unless you set your set y
 
 <!-- prettier-ignore -->
 ```js {3}
-const mySubscription = supabase
+const mySubscription = njinius
   .from('tableName')
   .on('eventType', callbackFunction)
 ```
@@ -141,7 +141,7 @@ A callback that will handle the payload that is sent whenever your database chan
 
 <!-- prettier-ignore -->
 ```js {4}
-const mySubscription = supabase
+const mySubscription = njinius
   .from(tableName)
   .on(eventType, callbackFunction)
   .subscribe()
@@ -174,7 +174,7 @@ If you don't need to connect again in the future, use `removeSubscription()` ins
 
 <!-- prettier-ignore -->
 ```js {2}
-supabase
+njinius
   .removeSubscription(mySubscription)
 ```
 
@@ -190,7 +190,7 @@ A subscription that was previously created. If you don't have access to the subs
 
 <!-- prettier-ignore -->
 ```js {2}
-supabase
+njinius
   .getSubscriptions()
 ```
 

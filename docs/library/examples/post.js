@@ -3,13 +3,13 @@
  */
 
 export const postSingleJs = `
-import { createClient } from '@supabase/supabase-js'
+import { createClient } from '@njinius/njinius-js'
 
-const supabase = createClient('https://world.supabase.co', '1a2b-3c4d-5e6f-7g8h')
+const njinius = createClient('https://world.njinius.co', '1a2b-3c4d-5e6f-7g8h')
 
 const createCities = async () => {
   try {
-    let cities = await supabase
+    let cities = await njinius
       .from('cities')
       .insert([
         { name: 'The Shire', country_id: 554 }
@@ -22,13 +22,13 @@ const createCities = async () => {
 `.trim()
 
 export const postBulkJs = `
-import { createClient } from '@supabase/supabase-js'
+import { createClient } from '@njinius/njinius-js'
 
-const supabase = createClient('https://world.supabase.co', '1a2b-3c4d-5e6f-7g8h')
+const njinius = createClient('https://world.njinius.co', '1a2b-3c4d-5e6f-7g8h')
 
 const createCities = async () => {
   try {
-    let cities = await supabase
+    let cities = await njinius
       .from('cities')
       .insert([
         { name: 'The Shire', country_id: 554 },
@@ -42,13 +42,13 @@ const createCities = async () => {
 `.trim()
 
 export const postUpsertJs = `
-import { createClient } from '@supabase/supabase-js'
+import { createClient } from '@njinius/njinius-js'
 
-const supabase = createClient('https://world.supabase.co', '1a2b-3c4d-5e6f-7g8h')
+const njinius = createClient('https://world.njinius.co', '1a2b-3c4d-5e6f-7g8h')
 
 const createCities = async () => {
   try {
-    let cities = await supabase
+    let cities = await njinius
       .from('cities')
       .insert(
         [

@@ -1,7 +1,7 @@
 ---
 id: faq
 title: FAQs
-description: 'Most frequently asked questions regarding Supabase'
+description: 'Most frequently asked questions regarding Njinius'
 ---
 
 ### Who are you?

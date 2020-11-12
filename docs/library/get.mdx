@@ -1,7 +1,7 @@
 ---
 id: get
 title: 'Reading'
-description: 'How to fetch records from your database with Supabase'
+description: 'How to fetch records from your database with njinius'
 ---
 
 import CommonFilters from '../common/CommonFilters'
@@ -201,7 +201,7 @@ Also see [PostgREST](http://postgrest.org/en/v7.0.0/api.html#json-columns) docs 
 #### General Form
 
 ```js {3}
-supabase.from(tableName).select(columnQuery)
+njinius.from(tableName).select(columnQuery)
 ```
 
 If `'*'` is passd in for `columnQuery`(i.e. `.select('*')`) then all columns in the table will be returned.
@@ -217,7 +217,7 @@ and another, you can also query the columns of the related table. For example `s
 
 <!-- prettier-ignore -->
 ```js
-supabase
+njinius
   .from('countries')
   .select(`
     name,
@@ -282,7 +282,7 @@ supabase
 #### General Form
 
 ```js {3}
-supabase.from(tableName).order(columnName, sortAscending, nullsFirst)
+njinius.from(tableName).order(columnName, sortAscending, nullsFirst)
 ```
 
 Orders your data before fetching.
@@ -344,7 +344,7 @@ Specifies whether null values will be displayed first.
 #### General Form
 
 ```js {3}
-supabase.from(tableName).limit(criteria, foreignTableName)
+njinius.from(tableName).limit(criteria, foreignTableName)
 ```
 
 Orders your data before fetching.
@@ -407,7 +407,7 @@ Name of chosen foreignTable to apply the limit on. Used if foreign tables are pr
 #### General Form
 
 ```js {3}
-supabase.from(tableName).offset(criteria, foreignTableName)
+njinius.from(tableName).offset(criteria, foreignTableName)
 ```
 
 Orders your data before fetching.
@@ -447,7 +447,7 @@ Name of chosen foreignTable to apply the limit on. Used if foreign tables are pr
 #### General Form
 
 ```js {3}
-supabase.from(tableName).range(fromIndex, toIndex)
+njinius.from(tableName).range(fromIndex, toIndex)
 ```
 
 Paginates your request.
@@ -484,7 +484,7 @@ Index or position of the end of the specified range. If not stated, all remainin
 #### General Form
 
 ```js {3}
-supabase.from(tableName).single()
+njinius.from(tableName).single()
 ```
 
 Sets the header which signifies to PostgREST that the response must either be a single object

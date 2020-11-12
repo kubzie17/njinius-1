@@ -74,7 +74,7 @@ export default function Oss() {
             <div className="col">
               <h2 className="with-underline">Open source</h2>
               <p className="">
-                Supabase is an opensource company, supporting existing open source tools and
+                Njinius is an opensource company, supporting existing open source tools and
                 communities wherever possible.
               </p>
             </div>
