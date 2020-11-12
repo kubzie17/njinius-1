@@ -12,7 +12,7 @@ import 'react-tabs/style/react-tabs.css'
 function Home() {
   const context = useDocusaurusContext()
   const { siteConfig = {} } = context
-  const [visibleCodeExample, showCodeExample] = useState('READ')
+  const [visibleCodeExample, showCodeExample] = useState('software')
   return (
     <Layout title={`${siteConfig.title}`} description={siteConfig.tagline}>
       
@@ -86,46 +86,46 @@ function Home() {
                 <div className="ButtonTabs col col--3">
                   <div>
                     <button
-                      className={`button button--${visibleCodeExample === 'READ' ? 'info is-active' : 'info '
+                      className={`button button--${visibleCodeExample === 'software' ? 'info is-active' : 'info '
                         }`}
-                      onClick={() => showCodeExample('READ')}
+                      onClick={() => showCodeExample('software')}
                     >
                       Software
                       </button>
                     <button
-                      className={`button button--${visibleCodeExample === 'SUBSCRIBE' ? 'info is-active' : 'info'
+                      className={`button button--${visibleCodeExample === 'business' ? 'info is-active' : 'info'
                         }`}
-                      onClick={() => showCodeExample('SUBSCRIBE')}
+                      onClick={() => showCodeExample('business')}
                     >
                       Business
                       </button>
                     <button
-                      className={`button button--${visibleCodeExample === 'UMD' ? 'info is-active' : 'info '
+                      className={`button button--${visibleCodeExample === 'bookClub' ? 'info is-active' : 'info '
                         }`}
-                      onClick={() => showCodeExample('UMD')}
+                      onClick={() => showCodeExample('bookClub')}
                     >
                       Book Club
                       </button>
                   </div>
                 </div>
                 <div className="col col--9 code-with-header">
-                  {visibleCodeExample === 'READ' && (
+                  {visibleCodeExample === 'software' && (
                     <Card >
-                      <Card.Body className="card text-white bg-dark">
-                        <Card.Title ><small>one liner about software</small></Card.Title>
-                        <br></br>
-                        <br></br>
-                        <br></br>
-                        <Card.Text >Some intro about what Software Track is about</Card.Text>
-                        <br></br>
-                        <Link to={useBaseUrl('docs/track/software/index')}>
-                          <Button variant="primary" to='docs/track/business/index' block>read more</Button>
-                        </Link>
-                      </Card.Body>
+                    <Card.Body class="card text-white bg-dark">
+                      <Card.Title ><small>one liner about Software</small></Card.Title>
+                      <br></br>
+                      <br></br>
+                      <br></br>
+                      <Card.Text >Some intro about what Software Track is about. typing this longer to be able to test the responsivenes on mobile view</Card.Text>
+                      <br></br>
+                      <Link to={useBaseUrl('docs/track/software/index')}>
+                        <Button variant="primary" to='docs/track/business/index' block>read more</Button>
+                      </Link>
+                    </Card.Body>
 
-                    </Card>
+                  </Card>
                   )}
-                  {visibleCodeExample === 'SUBSCRIBE' && (
+                  {visibleCodeExample === 'business' && (
                     <Card >
                       <Card.Body class="card text-white bg-dark">
                         <Card.Title ><small>one liner about Business</small></Card.Title>
@@ -142,7 +142,7 @@ function Home() {
                     </Card>
 
                   )}
-                  {visibleCodeExample === 'UMD' && (
+                  {visibleCodeExample === 'bookClub' && (
                     <Card >
                       <Card.Body class="card text-white bg-dark">
                         <Card.Title ><small>one liner abut Bookclub</small></Card.Title>
