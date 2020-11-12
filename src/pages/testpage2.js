@@ -256,6 +256,100 @@ function Hello() {
               </div>
             </div>
           </section> */}
+        <section className={styles.forDevelopers}>
+          <div className="container">
+            <div className={classnames('row', styles.responsiveCentered)}>
+              <div className="col col--6 col--offset-3">
+                <h2 className="">Something For Everyone</h2>
+                <p className="">
+                  Below are different
+                    <strong className="has-emphasis"> Tracks</strong> so you so there is definitely something for everyone. So why don't
+                    you pick your favorite track and get started with fun learning and collaboration
+                  </p>
+              </div>
+            </div>
+            <div className="ForDevelopers">
+              <div className="row">
+                <div className="ButtonTabs col col--3">
+                  <div>
+                    <button
+                      className={`button button--${visibleCodeExample === 'READ' ? 'info is-active' : 'info '
+                        }`}
+                      onClick={() => showCodeExample('READ')}
+                    >
+                      Software
+                      </button>
+                    <button
+                      className={`button button--${visibleCodeExample === 'SUBSCRIBE' ? 'info is-active' : 'info'
+                        }`}
+                      onClick={() => showCodeExample('SUBSCRIBE')}
+                    >
+                      Business
+                      </button>
+                    <button
+                      className={`button button--${visibleCodeExample === 'UMD' ? 'info is-active' : 'info '
+                        }`}
+                      onClick={() => showCodeExample('UMD')}
+                    >
+                      Book Club
+                      </button>
+                  </div>
+                </div>
+                <div className="col col--9 code-with-header">
+                  {visibleCodeExample === 'READ' && (
+                    <Card >
+                      <Card.Body class="card text-white bg-dark">
+                        <Card.Title ><small>on liner abut software</small></Card.Title>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <Card.Text >Some intro about what Software Track is about</Card.Text>
+                        <br></br>
+                        <Link to={useBaseUrl('docs/track/software/index')}>
+                          <Button variant="primary" to='docs/track/business/index' block>read more</Button>
+                        </Link>
+                      </Card.Body>
+
+                    </Card>
+                  )}
+                  {visibleCodeExample === 'SUBSCRIBE' && (
+                    <Card >
+                      <Card.Body class="card text-white bg-dark">
+                        <Card.Title ><small>on liner abut software</small></Card.Title>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <Card.Text >Some intro about what Business Track is about</Card.Text>
+                        <br></br>
+                        <Link to={useBaseUrl('docs/track/business/index')}>
+                          <Button variant="primary" to='docs/track/business/index' block>read more</Button>
+                        </Link>
+                      </Card.Body>
+
+                    </Card>
+
+                  )}
+                  {visibleCodeExample === 'UMD' && (
+                    <Card >
+                      <Card.Body class="card text-white bg-dark">
+                        <Card.Title ><small>on liner abut software</small></Card.Title>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <Card.Text >Some intro about what Book club Track is about</Card.Text>
+                        <br></br>
+                        <Link to={useBaseUrl('docs/track/bookClub/index')}>
+                          <Button variant="primary" to='docs/track/business/index' block>read more</Button>
+                        </Link>
+                      </Card.Body>
+
+                    </Card>
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
 
 

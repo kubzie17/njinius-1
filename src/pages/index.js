@@ -5,7 +5,7 @@ import Link from '@docusaurus/Link'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import useBaseUrl from '@docusaurus/useBaseUrl'
 import styles from './styles.module.css'
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
+import { Button,Card } from 'react-bootstrap'
 import 'react-tabs/style/react-tabs.css'
 
 
@@ -31,11 +31,6 @@ function Home() {
               </div>
               <div className="col col--7">
                 <img className="njinius" src='/static/img/njinaltlogo.png' height="380" width="390"/>
-                {/* <CustomCodeBlock
-                 // header="Query your PostgreSQL database and listen in real-time."
-                  //js={heroExample}
-                  <img =
-                /> */}
               </div>
             </div>
           </div>
@@ -74,65 +69,98 @@ function Home() {
         </body>
 
         {/* Something for everyne */}
-          <section className={styles.forDevelopers}>
-            <div className="container">
-              <div className={classnames('row', styles.responsiveCentered)}>
-                <div className="col col--6 col--offset-3">
-                  <h2 className="">Something For Everyone</h2>
-                  <p className="">
-                    Below are different  
-                    <strong className="has-emphasis"> Tracks</strong> so you so there is definitely something for everyone. So why don't 
+        <section className={styles.forDevelopers}>
+          <div className="container">
+            <div className={classnames('row', styles.responsiveCentered)}>
+              <div className="col col--6 col--offset-3">
+                <h2 className="">Something For Everyone</h2>
+                <p className="">
+                  Below are different
+                    <strong className="has-emphasis"> Tracks</strong> so you so there is definitely something for everyone. So why don't
                     you pick your favorite track and get started with fun learning and collaboration
                   </p>
+              </div>
+            </div>
+            <div className="ForDevelopers">
+              <div className="row">
+                <div className="ButtonTabs col col--3">
+                  <div>
+                    <button
+                      className={`button button--${visibleCodeExample === 'READ' ? 'info is-active' : 'info '
+                        }`}
+                      onClick={() => showCodeExample('READ')}
+                    >
+                      Software
+                      </button>
+                    <button
+                      className={`button button--${visibleCodeExample === 'SUBSCRIBE' ? 'info is-active' : 'info'
+                        }`}
+                      onClick={() => showCodeExample('SUBSCRIBE')}
+                    >
+                      Business
+                      </button>
+                    <button
+                      className={`button button--${visibleCodeExample === 'UMD' ? 'info is-active' : 'info '
+                        }`}
+                      onClick={() => showCodeExample('UMD')}
+                    >
+                      Book Club
+                      </button>
+                  </div>
+                </div>
+                <div className="col col--9 code-with-header">
+                  {visibleCodeExample === 'READ' && (
+                    <Card >
+                      <Card.Body class="card text-white bg-dark">
+                        <Card.Title ><small>one liner about software</small></Card.Title>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <Card.Text >Some intro about what Software Track is about</Card.Text>
+                        <br></br>
+                        <Link to={useBaseUrl('docs/track/software/index')}>
+                          <Button variant="primary" to='docs/track/business/index' block>read more</Button>
+                        </Link>
+                      </Card.Body>
+
+                    </Card>
+                  )}
+                  {visibleCodeExample === 'SUBSCRIBE' && (
+                    <Card >
+                      <Card.Body class="card text-white bg-dark">
+                        <Card.Title ><small>one liner about Business</small></Card.Title>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <Card.Text >Some intro about what Business Track is about</Card.Text>
+                        <br></br>
+                        <Link to={useBaseUrl('docs/track/business/index')}>
+                          <Button variant="primary" to='docs/track/business/index' block>read more</Button>
+                        </Link>
+                      </Card.Body>
+
+                    </Card>
+
+                  )}
+                  {visibleCodeExample === 'UMD' && (
+                    <Card >
+                      <Card.Body class="card text-white bg-dark">
+                        <Card.Title ><small>one liner abut Bookclub</small></Card.Title>
+                          <br></br>
+                          <br></br>
+                          <br></br>
+                        <Card.Text >Some intro about what Book club Track is about</Card.Text>
+                          <br></br>
+                        <Link to={useBaseUrl('docs/track/bookClub/index')}>
+                          <Button variant="primary" to='docs/track/business/index' block>read more</Button>
+                        </Link>
+                      </Card.Body>
+
+                    </Card>
+                  )}
                 </div>
               </div>
-              <Tabs>
-                <TabList>
-                    <Tab>Software</Tab>
-                    <Tab >Business</Tab>
-                    <Tab>Book Club</Tab>
-                </TabList>
-
-                <TabPanel>
-                    <p>
-                    NJinius was created to help people, all ability levels develop their understanding 
-                    of programming and business. We are creating a community of like-minded individuals who seek to 
-                    expand and develop a 360 understanding of their respective industry. We hold workshops, tutorials 
-                    and discussions in many different subject areas for this purpose, offering a relaxed environment 
-                    to learn and develop new skills.
-                    </p>
-                    
-                </TabPanel>
-                <TabPanel>
-                    <p>
-                        <b>Luigi</b> (<i>Japanese: ルイージ Hepburn: Ruīji, [ɾɯ.iː.dʑi̥]</i>) (<i>English: /luˈiːdʒi/;
-                        Italian: [luˈiːdʒi]</i>) is a fictional character featured in video games and related media
-                        released by Nintendo. Created by prominent game designer Shigeru Miyamoto, Luigi is portrayed
-                        as the slightly younger but taller fraternal twin brother of Nintendo's mascot Mario, and
-                        appears in many games throughout the Mario franchise, often as a sidekick to his brother.
-                    </p>
-                    <p>
-                        Source:{' '}
-                        <a href="https://en.wikipedia.org/wiki/Luigi" target="_blank">
-                            Wikipedia</a>
-                    </p>
-                </TabPanel>
-                <TabPanel>
-                    <p>
-                        <b>Princess Peach</b> (<i>Japanese: ピーチ姫 Hepburn: Pīchi-hime, [piː.tɕi̥ çi̥.me]</i>)
-                            is a character in Nintendo's Mario franchise. Originally created by Shigeru Miyamoto,
-                            Peach is the princess of the fictional Mushroom Kingdom, which is constantly under
-                            attack by Bowser. She often plays the damsel in distress role within the series and
-                            is the lead female. She is often portrayed as Mario's love interest and has appeared
-                            in Super Princess Peach, where she is the main playable character.
-                    </p>
-                    <p>
-                        Source:{' '}
-                        <a href="https://en.wikipedia.org/wiki/Princess_Peach" target="_blank">
-                            Wikipedia</a>
-                    </p>
-                </TabPanel>  
-            </Tabs>
+            </div>
           </div>
         </section>
       </main>
