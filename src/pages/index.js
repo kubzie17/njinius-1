@@ -15,7 +15,7 @@ function Home() {
   const [visibleCodeExample, showCodeExample] = useState('READ')
   return (
     <Layout title={`${siteConfig.title}`} description={siteConfig.tagline}>
-      <main className="HomePage" >
+      
         {/* HEADER */}
         <header className={classnames('hero full', styles.heroBanner)}>
           <div className="container">
@@ -111,7 +111,7 @@ function Home() {
                 <div className="col col--9 code-with-header">
                   {visibleCodeExample === 'READ' && (
                     <Card >
-                      <Card.Body class="card text-white bg-dark">
+                      <Card.Body className="card text-white bg-dark">
                         <Card.Title ><small>one liner about software</small></Card.Title>
                         <br></br>
                         <br></br>
@@ -163,7 +163,7 @@ function Home() {
             </div>
           </div>
         </section>
-      </main>
+     
     </Layout>
   )
 }
