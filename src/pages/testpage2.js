@@ -153,110 +153,8 @@ function Hello() {
 
             </div>
 
-            {/* </div>
-            <div className={vidstyles.videoContainer}>
-                <iframe width="560" height="315" src='https://www.youtube.com/embed/E7wJTI-1dvQ'
-                    frameBorder='0'
-                    allow='autoplay; encrypted-media; accelerometer; gyroscope; picture-in-picture'
-                    allowFullScreen
-                    title='video'
-                />
-
-            </div>
-
-            
-
-            <div classname="Pagination">
-                <Row xs="5">
-                    <Col >1</Col>
-                    <Col >2</Col>
-                    <Col >3</Col>
-                    <Col >4</Col>
-                    <Col >5</Col>
-                    <Col >7</Col>
-
-
-
-                </Row>
-            </div>
-
            
-          <section className={styles.forDevelopers}>
-            <div className="container">
-              <div className={classnames('row', styles.responsiveCentered)}>
-                <div className="col col--6 col--offset-3">
-                  <h2 className="">Something For Everyone</h2>
-                  <p className="">
-                    Below are different  
-                    <strong className="has-emphasis"> Tracks</strong> so you so there is definitely something for everyone. So why don't 
-                    you pick your favorite track and get started with fun learning and collaboration
-                  </p>
-                </div>
-              </div>
-              <div className="ForDevelopers">
-                <div className="row">
-                  <div className="ButtonTabs col col--3">
-                    <div>
-                      <button
-                        className={`button button--${
-                          visibleCodeExample === 'READ' ? 'info is-active' : 'info '
-                        }`}
-                        onClick={() => showCodeExample('READ')}
-                      >
-                        Software
-                      </button>
-                      <button
-                        className={`button button--${
-                          visibleCodeExample === 'SUBSCRIBE' ? 'info is-active' : 'info'
-                        }`}
-                        onClick={() => showCodeExample('SUBSCRIBE')}
-                      >
-                        Business
-                      </button>
-                      <button
-                        className={`button button--${
-                          visibleCodeExample === 'UMD' ? 'info is-active' : 'info '
-                        }`}
-                        onClick={() => showCodeExample('UMD')}
-                      >
-                        Book Club
-                      </button>
-                    </div>
-                  </div>
-                  <div className="col col--9 code-with-header">
-                    {visibleCodeExample === 'READ' && (
-                      <CustomCodeBlock
-                        header="A step into the software world"
-                        js={readExample}
-                      />
-                    )}
-                    {visibleCodeExample === 'SUBSCRIBE' && (
-                      <CustomCodeBlock
-                        header="Share and exchange business expertise"
-                        js={subscribeExample}
-                      />
-                    )}
-                    {visibleCodeExample === 'CREATE' && (
-                      <CustomCodeBlock header="Feed the ming with a variety of books" js={createExample} />
-                    )}
-                    {visibleCodeExample === 'UPDATE' && (
-                      <CustomCodeBlock header="Update a user" js={updateExample} />
-                    )}
-                    {visibleCodeExample === 'NODETS' && (
-                      <CustomCodeBlock
-                        header="Server-side & client-side TypeScript support e.g. in Next.js API routes"
-                        js={nodeTSExample}
-                      />
-                    )}
-                    {visibleCodeExample === 'UMD' && (
-                      <CustomCodeBlock header="Feed the ming with a variety of books" js={umdExample} />
-                    )}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section> */}
-        <section className={styles.forDevelopers}>
+        <section className={styles.forTracks}>
           <div className="container">
             <div className={classnames('row', styles.responsiveCentered)}>
               <div className="col col--6 col--offset-3">
@@ -268,7 +166,7 @@ function Hello() {
                   </p>
               </div>
             </div>
-            <div className="ForDevelopers">
+            <div className="ForTracks">
               <div className="row">
                 <div className="ButtonTabs col col--3">
                   <div>

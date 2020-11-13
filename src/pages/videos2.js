@@ -1,41 +1,24 @@
-import React, { useState } from 'react'
+import React from 'react'
 import classnames from 'classnames'
 import Layout from '@theme/Layout'
 import Link from '@docusaurus/Link'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import useBaseUrl from '@docusaurus/useBaseUrl'
 import styles from './styles.module.css'
-import CustomCodeBlock from '../components/CustomCodeBlock'
-import GithubCard from '../components/GithubCard'
-import HowCard from '../components/HowCard'
-import { repos } from '../data/github'
-import { Container, Row, Col, Button, Alert, Breadcrumb, Card } from 'react-bootstrap'
-import VideoPlayer from 'react-video-js-player';
-import Car from "../../static/videos/car.mp4"
-import Var from "../../static/videos/van.mp4"
-import bik from "../../static/videos/bike.mp4"
-import ReactPlayer from "react-player"
-import Pagination from "react-js-pagination"
-
+import { Container, Row} from 'react-bootstrap'
+import vidStyles from './video.css'
 
 
 function Video2() {
     const context = useDocusaurusContext()
-    const imgUrl1 = '/static/img/undraw_docusaurus_mountain.svg';
-    const imgUrl2 = '/static/img/undraw_docusaurus_react.svg';
-    const imgUrl3 = '/static/img/undraw_docusaurus_tree.svg';
-    const videoSrc = Car;
-    const videoSrc2 = Var;
-    const videoSrc3 = bik;
     const { siteConfig = {} } = context
-    const [visibleCodeExample, showCodeExample] = useState('READ')
     return (
         <Layout title="Videos" description={siteConfig.tagline}>
             <main className="ArchivePage" >
                 {/* HEADER */}
                 <header className={classnames('hero full', styles.heroBanner)}>
                     {/* HOW */}
-                    <section className={styles.forDevelopers}>
+                    <section className={styles.forTracks}>
                         <div className="container" color="blue">
                             <div className={classnames('row', styles.responsiveCentered)}>
                                 <div className="col col--6 col--offset-3">
@@ -49,7 +32,7 @@ function Video2() {
                                     <div className="App">
 
                                         <h2>Data Types</h2>
-                                        <div className={styles.videoContainer} 
+                                        <div className={vidStyles.videoContainer} 
                                             style={{alignItems: 'center',
                                             display: 'inline',
                                             float: 'left',
@@ -69,7 +52,6 @@ function Video2() {
                                             floating point numbers, characters, strings, and arrays.
                                         </p>
                                     </div>
-
                                 </Container>
                             </Row>
 
@@ -78,7 +60,7 @@ function Video2() {
                                     <div className="App">
 
                                         <h2>Deconstructors</h2>
-                                        <div className={styles.videoContainer} 
+                                        <div className={vidStyles.videoContainer} 
                                             style={{alignItems: 'center',
                                             display: 'inline',
                                             float: 'left',
@@ -97,7 +79,6 @@ function Video2() {
                                         Destructors are automatically called take no arguments, nor do they have a return type
                                         </p>
                                     </div>
-
                                 </Container>
                             </Row>
 
@@ -106,7 +87,7 @@ function Video2() {
                                     <div className="App">
 
                                         <h2>Exception Handling</h2>
-                                        <div className={styles.videoContainer} 
+                                        <div className={vidStyles.videoContainer} 
                                             style={{alignItems: 'center',
                                             display: 'inline',
                                             float: 'left',
@@ -127,7 +108,6 @@ function Video2() {
                                         to gracefully handle these situations so that a program (or worse, an entire system) does not crash
                                         </p>
                                     </div>
-
                                 </Container>
                             </Row>
 
@@ -136,7 +116,7 @@ function Video2() {
                                     <div className="App">
 
                                         <h2>Functions and Parameters</h2>
-                                        <div className={styles.videoContainer} 
+                                        <div className={vidStyles.videoContainer} 
                                             style={{alignItems: 'center',
                                             display: 'inline',
                                             float: 'left',
@@ -156,7 +136,6 @@ function Video2() {
                                             function so that the function can do something utilising those values
                                         </p>
                                     </div>
-
                                 </Container>
                             </Row>
 
@@ -165,7 +144,7 @@ function Video2() {
                                     <div className="App">
 
                                         <h2>Inheritance</h2>
-                                        <div className={styles.videoContainer} 
+                                        <div className={vidStyles.videoContainer} 
                                             style={{alignItems: 'center',
                                             display: 'inline',
                                             float: 'left',
@@ -188,10 +167,8 @@ function Video2() {
                                         that receive properties and behaviors from a parent through inheritance are referred to as child objects.
                                         </p>
                                     </div>
-
                                 </Container>
-                            </Row>
-                            
+                            </Row> 
                         </div>
                     </section>
                 </header>
