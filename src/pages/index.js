@@ -19,12 +19,11 @@ function Home() {
       {/* HEADER */}
       <header className={classnames('hero full', styles.heroBanner)}>
         <div className="container">
-
           <div className="row">
             <div className="col col--5">
               <h2 className="hero__title">Welcome to NJinius Hub where iron sharpens iron...</h2>
               <p className="hero__subtitle">
-                <p>Njinius is a one stop shop for a variety of knowledge between the channels of software, business and book clubs. Find the track right for you and induldge in a world of learning, or even shar your knowledge and expertise. So come, join us and lets do something NJinius!</p>
+                Njinius is a one stop shop for a variety of knowledge between the channels of software, business and book clubs. Find the track right for you and induldge in a world of learning, or even shar your knowledge and expertise. So come, join us and lets do something NJinius!
               </p>
             </div>
 
@@ -36,7 +35,7 @@ function Home() {
         </div>
     </header>
 
-    <body className={classnames('hero full', styles.heroBanner)}>
+    <main className={classnames('hero full', styles.heroBanner)}>
       <div className="container">
 
         <div className="row">
@@ -47,9 +46,8 @@ function Home() {
           <div className="col col--7">
             <h2 className="hero__title" style={{ textAlign: "center" }}>{siteConfig.tagline}</h2>
             <p className="hero__subtitle">
-              <p>NJinius was created to help people of all ability levels develop their understanding of programming and business. We are creating a community of like-minded individuals who seek to expand and develop a 360 understanding of their respective industry.
-                  We hold workshops, tutorials and discussions in many different subject areas for this purpose, offering a relaxed environment to learn and develop new skills.
-              </p>
+              NJinius was created to help people of all ability levels develop their understanding of programming and business. We are creating a community of like-minded individuals who seek to expand and develop a 360 understanding of their respective industry.
+              We hold workshops, tutorials and discussions in many different subject areas for this purpose, offering a relaxed environment to learn and develop new skills.
             </p>
             <div>
               <Link
@@ -66,7 +64,7 @@ function Home() {
           </div>
         </div>
       </div>
-    </body>
+    </main>
 
     {/* Something for everyne */}
     <section className={styles.forTracks}>
@@ -110,7 +108,7 @@ function Home() {
             <div className="col col--9 code-with-header">
               {visibleCodeExample === 'software' && (
                 <Card >
-                  <Card.Body class="card text-white bg-dark">
+                  <Card.Body className="card text-white bg-dark">
                     <Card.Title ><small>one liner about Software</small></Card.Title>
                     <br></br>
                     <br></br>
@@ -125,7 +123,7 @@ function Home() {
               )}
               {visibleCodeExample === 'business' && (
                 <Card >
-                  <Card.Body class="card text-white bg-dark">
+                  <Card.Body className="card text-white bg-dark">
                     <Card.Title ><small>one liner about Business</small></Card.Title>
                     <br></br>
                     <br></br>
@@ -141,7 +139,7 @@ function Home() {
               )}
               {visibleCodeExample === 'bookClub' && (
                 <Card >
-                  <Card.Body class="card text-white bg-dark">
+                  <Card.Body className="card text-white bg-dark">
                     <Card.Title ><small>one liner abut Bookclub</small></Card.Title>
                     <br></br>
                     <br></br>
@@ -159,7 +157,7 @@ function Home() {
         </div>
       </div>
     </section>
-    </Layout>
+  </Layout>
   )
 }
 

@@ -196,7 +196,7 @@ function Hello() {
                 <div className="col col--9 code-with-header">
                   {visibleCodeExample === 'READ' && (
                     <Card >
-                      <Card.Body class="card text-white bg-dark">
+                      <Card.Body className="card text-white bg-dark">
                         <Card.Title ><small>on liner abut software</small></Card.Title>
                         <br></br>
                         <br></br>
@@ -212,7 +212,7 @@ function Hello() {
                   )}
                   {visibleCodeExample === 'SUBSCRIBE' && (
                     <Card >
-                      <Card.Body class="card text-white bg-dark">
+                      <Card.Body className="card text-white bg-dark">
                         <Card.Title ><small>on liner abut software</small></Card.Title>
                         <br></br>
                         <br></br>
@@ -229,7 +229,7 @@ function Hello() {
                   )}
                   {visibleCodeExample === 'UMD' && (
                     <Card >
-                      <Card.Body class="card text-white bg-dark">
+                      <Card.Body className="card text-white bg-dark">
                         <Card.Title ><small>on liner abut software</small></Card.Title>
                         <br></br>
                         <br></br>
