@@ -949,3 +949,8 @@ html[data-theme='dark'] .navbar-item-github:before {
   align-items: center;
   justify-content: center;
 }
+
+.challengeImg {
+  align-items: center;
+  justify-content: center;
+}
