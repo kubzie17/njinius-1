@@ -36,7 +36,7 @@ function Challenge() {
                                             <img className="diagram" src="/static/img/pot.gif" />
                                             <br></br>
                                             <br></br>
-                                            <h2 className="">Please check back soon!!!</h2>
+                                            <h2 className="">Please check back soon!</h2>
                                         </div>
                                     </div>
                                 </Container>

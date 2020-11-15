@@ -61,19 +61,14 @@ module.exports = {
         srcDark: '/static/img/njiniusone.png',
       },
       items: [
-        {
-          to: '/docs',
-          label: 'Guides',
-          position: 'right',
-          className: 'navbar-item-pages',
-        },
+        
         {
           to: '/blog',
           label: 'Blogs',
           position: 'right',
           className: 'navbar-item-pages',
         },
-        { to: '/docs/doc6', label: 'Schedule', position: 'right' },
+        { to: '/docs/doc6', label: 'Live Sessions', position: 'right' },
         { to: '/testpage', label: 'Test page', position: 'right' },
         { to: '/testpage2', label: 'Test page2', position: 'right' },
         { to: '/Challenge', label: 'Challenge', position: 'right' },
@@ -85,7 +80,7 @@ module.exports = {
 
         {
           to: '/tracks',
-          label: 'Tracks',
+          label: 'Topics',
           position: 'right',
         },
 
