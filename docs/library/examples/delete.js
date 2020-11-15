@@ -8,7 +8,7 @@ export const deleteRecordJs = `
 ${importJs}
 const deleteCity = async () => {
   try {
-    let values = await supabase
+    let values = await njinius
       .from('cities')
       .delete()
       .match({ id: 666 })
@@ -20,7 +20,7 @@ export const deleteFilterJs = `
 ${importJs}
 const deleteCity = async () => {
   try {
-    let cities = await supabase
+    let cities = await njinius
       .from('cities')
       .delete()
       .filter({'name', 'eq', 'Paris'})
@@ -32,7 +32,7 @@ export const deleteNotJs = `
 ${importJs}
 const getCities = async () => {
   try {
-    let cities = await supabase
+    let cities = await njinius
       .from('cities')
       .delete()
       .not('name', 'eq', 'Paris')
@@ -44,7 +44,7 @@ export const deleteMatchJs = `
 ${importJs}
 const deleteCity = async () => {
   try {
-    let cities = await supabase
+    let cities = await njinius
       .from('cities')
       .delete()
       .match({name: 'Beijing', country_id: 156})
@@ -56,7 +56,7 @@ export const deleteEqJs = `
 ${importJs}
 const deleteCity = async () => {
   try {
-    let cities = await supabase
+    let cities = await njinius
       .from('cities')
       .delete()
       .eq('name', 'San Francisco')
@@ -68,7 +68,7 @@ export const deleteNeqJs = `
 ${importJs}
 const deleteCity = async () => {
   try {
-    let cities = await supabase
+    let cities = await njinius
       .from('cities')
       .delete()
       .neq('name', 'Lagos')
@@ -80,7 +80,7 @@ export const deleteGtJs = `
 ${importJs}
 const deleteCity = async () => {
   try {
-    let cities = await supabase
+    let cities = await njinius
       .from('cities')
       .delete()
       .gt('country_id', 250)
@@ -92,7 +92,7 @@ export const deleteLtJs = `
 ${importJs}
 const deleteCity = async () => {
   try {
-    let cities = await supabase
+    let cities = await njinius
       .from('cities')
       .delete()
       .lt('country_id', 250)
@@ -104,7 +104,7 @@ export const deleteGteJs = `
 ${importJs}
 const deleteCity = async () => {
   try {
-    let cities = await supabase
+    let cities = await njinius
       .from('cities')
       .delete()
       .gte('country_id', 250)
@@ -116,7 +116,7 @@ export const deleteLteJs = `
 ${importJs}
 const deleteCity = async () => {
   try {
-    let cities = await supabase
+    let cities = await njinius
       .from('cities')
       .delete()
       .lte('country_id', 250)
@@ -128,7 +128,7 @@ export const deleteLikeJs = `
 ${importJs}
 const deleteCity = async () => {
   try {
-    let cities = await supabase
+    let cities = await njinius
       .from('cities')
       .delete()
       .like('name', '%la%')
@@ -140,7 +140,7 @@ export const deleteIlikeJs = `
 ${importJs}
 const deleteCity = async () => {
   try {
-    let cities = await supabase
+    let cities = await njinius
       .from('cities')
       .delete()
       .ilike('name', '%la%')
@@ -152,7 +152,7 @@ export const deleteIsJs = `
 ${importJs}
 const deleteCity = async () => {
   try {
-    let cities = await supabase
+    let cities = await njinius
       .from('cities')
       .delete()
       .is('name', null)
@@ -164,7 +164,7 @@ export const deleteInJs = `
 ${importJs}
 const deleteCity = async () => {
   try {
-    let cities = await supabase
+    let cities = await njinius
       .from('cities')
       .delete()
       .in('name', ['Rio de Janeiro', 'San Francisco'])
@@ -176,7 +176,7 @@ export const deleteCsJs = `
 ${importJs}
 const deleteCountry = async () => {
   try {
-    let countries = await supabase
+    let countries = await njinius
       .from('countries')
       .delete()
       .cs('main_exports', ['oil'])
@@ -188,7 +188,7 @@ export const deleteCdJs = `
 ${importJs}
 const deleteCountry = async () => {
   try {
-    let countries = await supabase
+    let countries = await njinius
       .from('countries')
       .delete()
       .cd('main_exports', ['cars', 'food', 'machine'])
@@ -200,7 +200,7 @@ export const deleteOvaJs = `
 ${importJs}
 const deleteCountry = async () => {
   try {
-    let countries = await supabase
+    let countries = await njinius
       .from('countries')
       .delete()
       .ova('main_exports', ['computers', 'minerals'])
@@ -212,7 +212,7 @@ export const deleteOvrJs = `
 ${importJs}
 const deleteCountry = async () => {
   try {
-    let countries = await supabase
+    let countries = await njinius
       .from('countries')
       .delete()
       .ovr('population_range_millions', [150, 250])
@@ -224,7 +224,7 @@ export const deleteSlJs = `
 ${importJs}
 const deleteCountry = async () => {
   try {
-    let countries = await supabase
+    let countries = await njinius
       .from('countries')
       .delete()
       .sl('population_range_millions', [150, 250])
@@ -236,7 +236,7 @@ export const deleteSrJs = `
 ${importJs}
 const deleteCountry = async () => {
   try {
-    let countries = await supabase
+    let countries = await njinius
       .from('countries')
       .delete()
       .sr('population_range_millions', [150, 250])
@@ -248,7 +248,7 @@ export const deleteNxlJs = `
 ${importJs}
 const deleteCountry = async () => {
   try {
-    let countries = await supabase
+    let countries = await njinius
       .from('countries')
       .delete()
       .nxl('population_range_millions', [150, 250])
@@ -260,7 +260,7 @@ export const deleteNxrJs = `
 ${importJs}
 const deleteCountry = async () => {
   try {
-    let countries = await supabase
+    let countries = await njinius
       .from('countries')
       .delete()
       .nxr('population_range_millions', [150, 250])
@@ -272,7 +272,7 @@ export const deleteAdjJs = `
 ${importJs}
 const deleteCountry = async () => {
   try {
-    let countries = await supabase
+    let countries = await njinius
       .from('countries')
       .delete()
       .adj('population_range_millions', [70, 185])

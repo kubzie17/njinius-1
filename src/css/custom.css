@@ -188,7 +188,6 @@
 
 html,
 body {
-  font-smoothing: antialiased;
   text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -608,14 +607,14 @@ div[class^="codeBlockContent"] , div[class*=" codeBlockContent"], .prism-code {
 }
 
 /* HomePage */
-.ForDevelopers .row {
+.ForTracks .row {
   display: flex;
   flex-direction: row-reverse;
 }
-.ForDevelopers .button {
+.ForTracks .button {
   text-align: left;
 }
-.ForDevelopers .button.button--link:hover {
+.ForTracks .button.button--link:hover {
   text-decoration: none;
   transition: all 0.2s ease;
   opacity: 0.8;
@@ -947,6 +946,11 @@ html[data-theme='dark'] .navbar-item-github:before {
 }
 
 .aboutlogo{
+  align-items: center;
+  justify-content: center;
+}
+
+.challengeImg {
   align-items: center;
   justify-content: center;
 }

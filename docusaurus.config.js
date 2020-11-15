@@ -8,11 +8,11 @@
 module.exports = {
   title: 'Njinius',
   tagline: 'About',
-  url: 'https://supabase.io',
+  url: 'https://njinius.github.io',
   baseUrl: '/',
   favicon: '/static/img/njinlogo.png',
-  organizationName: 'Njinius', // Usually your GitHub org/user name.
-  projectName: 'Njinius', // Usually your repo name.
+  organizationName: 'njinius', // Usually your GitHub org/user name.
+  projectName: 'njinius', // Usually your repo name.
   themeConfig: {
     forceDarkMode: false,
     darkMode: false,
@@ -51,16 +51,9 @@ module.exports = {
     googleAnalytics: {
       trackingID: 'UA-155232740-1',
     },
-    // announcementBar: {
-    //   id: 'support_us', // Any value that will identify this message
-    //   content:
-    //     'Join our early alpha: <a target="_blank" rel="noopener noreferrer" href="https://app.supabase.io">app.supabase.io</a>',
-    //   backgroundColor: '#111111', // Defaults to `#fff`
-    //   textColor: '#ddd', // Defaults to `#000`
-    // },
+   
     navbar: {
-      // classNames: 'shadow--md',
-      // title: 'supabase',
+
       hideOnScroll: true,
       logo: {
         alt: 'Njinius',
@@ -68,20 +61,17 @@ module.exports = {
         srcDark: '/static/img/njiniusone.png',
       },
       items: [
-        {
-          to: '/docs',
-          label: 'Guides',
-          position: 'right',
-          className: 'navbar-item-pages',
-        },
+        
         {
           to: '/blog',
           label: 'Blogs',
           position: 'right',
           className: 'navbar-item-pages',
         },
-        { to: '/docs/doc6', label: 'Schedule', position: 'right' },
-       
+        { to: '/docs/doc6', label: 'Live Sessions', position: 'right' },
+        { to: '/testpage', label: 'Test page', position: 'right' },
+        { to: '/testpage2', label: 'Test page2', position: 'right' },
+        { to: '/Challenge', label: 'Challenge', position: 'right' },
         {
           to: '/videos',
           label: 'Videos',
@@ -90,7 +80,7 @@ module.exports = {
 
         {
           to: '/tracks',
-          label: 'Tracks',
+          label: 'Topics',
           position: 'right',
         },
 

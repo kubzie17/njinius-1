@@ -1,33 +1,33 @@
 ---
 id: getting-started
 title: Getting Started
-description: 'How to install Supabase and start interacting with your database'
+description: 'How to install njinius and start interacting with your database'
 ---
 
 
 ## Installing
 
 ```bash
-npm install --save @supabase/supabase-js
+npm install --save @njinius/njinius-js
 # OR
-yarn add @supabase/supabase-js
+yarn add @njinius/njinius-js
 ```
 
 
 ## Initializing
 
 ```js
-import { createClient } from '@supabase/supabase-js'
+import { createClient } from '@njinius/njinius-js'
 
-// Create a single supabase client for interacting with your database 
-const supabase = createClient("https://xyzcompany.supabase.co", "public-anon-key");
+// Create a single njinius client for interacting with your database 
+const njinius = createClient("https://xyzcompany.njinius.co", "public-anon-key");
 ```
 
 
 
 ## Usage with TypeScript
 
-Supabase-js ships with type definitions for usage with TypeScript and for convenient IntelliSense autocomplete and documentation in your editor.
+njinius-js ships with type definitions for usage with TypeScript and for convenient IntelliSense autocomplete and documentation in your editor.
 
 When using TypeScript, you can pass the type of database row as a type parameter to the `from` method to get better autocompletion support down the chain. 
 If you don't provide a type for the row you need to explicitly pass `from<any>('tableName')`.
@@ -42,14 +42,14 @@ type Message = {
   author: { username: string };
 };
 
-const response = await supabase
+const response = await njinius
   .from<Message>('messages') // Message maps to the type of the row in your database.
   .select('*, author:user_id(username)')
   .match({ channel_id: 2 }); // Your IDE will be able to help with automcompletion.
 response.body // Response body will be of type Array<Message>.
 
 // If you don't provide a type for the row you need to explicitly pass `from<any>('tableName')`.
-const response = await supabase
+const response = await njinius
   .from<any>('messages')
   .select('*, author:user_id(username)')
   .match({ channel_id: 2 });
@@ -58,18 +58,18 @@ response.body // Response body will be of type Array<any>.
 
 ### Generate database types from Swagger OpenAPI specification
 
-Supabase generates a Swagger speficiation file for your database which can be used to generate your data types for usage with TypeScript.
+njinius generates a Swagger speficiation file for your database which can be used to generate your data types for usage with TypeScript.
 
-The Swagger specification for your Supabase project can be accessed as follows:
+The Swagger specification for your njinius project can be accessed as follows:
 
 ```txt
-https://your-project.supabase.co/rest/v1/?apikey=your-anon-key
+https://your-project.njinius.co/rest/v1/?apikey=your-anon-key
 ```
 
 Using the open source [swagger-to-ts](https://github.com/manifoldco/swagger-to-ts#%EF%B8%8F-reading-specs-from-remote-resource) tool you can generate your types and store them locally:
 
 ```bash
-npx @manifoldco/swagger-to-ts https://your-project.supabase.co/rest/v1/?apikey=your-anon-key --output types/supabase.ts
+npx @manifoldco/swagger-to-ts https://your-project.njinius.co/rest/v1/?apikey=your-anon-key --output types/njinius.ts
 ```
 
 **Note:** Do note that your local types won't automatically stay in sync with your database, so make sure to regenerate your types after your make changes to your database.
@@ -78,16 +78,16 @@ After you have generated your types, you can use them in your TypeScript project
 
 ```ts
 import { NextApiRequest, NextApiResponse } from "next";
-import { createClient } from "@supabase/supabase-js";
-import { definitions } from "../../types/supabase";
+import { createClient } from "@njinius/njinius-js";
+import { definitions } from "../../types/njinius";
 
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL,
-  process.env.SUPABASE_SECRET_KEY
+const njinius = createClient(
+  process.env.NEXT_PUBLIC_njinius_URL,
+  process.env.njinius_SECRET_KEY
 );
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
-  const allOnlineUsers = await supabase
+  const allOnlineUsers = await njinius
     .from<definitions["users"]>("users")
     .select("*")
     .eq("status", "ONLINE");
@@ -100,14 +100,14 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
 ### `createClient()`
 
 ```js 
-createClient('supabaseURL', 'supabaseKey', OPTIONS)
+createClient('njiniusURL', 'njiniusKey', OPTIONS)
 ```
 
-#### `supabaseURL: string` 
-The unique Supabase URL which is supplied when you create a new project in [your project dashboard](https://app.supabase.io).
+#### `njiniusURL: string` 
+The unique njinius URL which is supplied when you create a new project in [your project dashboard](https://app.njinius.io).
 
-#### `supabaseKey: string`
-The unique Supabase Key which is supplied when you create a new project in [your project dashboard](https://app.supabase.io).
+#### `njiniusKey: string`
+The unique njinius Key which is supplied when you create a new project in [your project dashboard](https://app.njinius.io).
 
 #### `OPTIONS: object?`
 
