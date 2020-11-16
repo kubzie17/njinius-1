@@ -69,6 +69,8 @@ module.exports = {
 
     {type: 'category', label: 'Schedule', items: ['doc6']},
 
+    {type: 'category', label: 'Contribute', items: ['doc7']},
+
     {
       type: 'category',
       label: 'Legal',

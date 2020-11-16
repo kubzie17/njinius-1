@@ -167,5 +167,5 @@ The table below shows built-in exceptions that are usually raised in Python:
 ## Disclosure  
 The bulk of this content was taken from W3 Schools, for the purpose of studying and group discussion. This is not for the purpose of monetary gain and for further details on each of this topic visit  [W3 schools](https://www.w3schools.com/)
 =======
-## I am thinking...
+
 

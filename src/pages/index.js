@@ -25,6 +25,18 @@ function Home() {
               <p className="hero__subtitle">
                 Njinius is a one stop shop for a variety of knowledge between the channels of software, business and book clubs. Find the track right for you and induldge in a world of learning, or even shar your knowledge and expertise. So come, join us and lets do something NJinius!
               </p>
+              <div>
+              <Link
+                className={classnames(
+                  'button hero--button button--md button--secondary button--outline responsive-button',
+                  styles.button
+                )}
+                to={useBaseUrl('docs/doc7')}
+                style={{ marginLeft: 200, marginTop: 10 }}
+                 >
+                Contribte
+              </Link>
+            </div>
             </div>
 
             <div className="col col--7">
