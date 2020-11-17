@@ -8,9 +8,9 @@ Make sure you have Docker [installed](https://docs.docker.com/get-docker/).
 
 ## Quick Install
 
-The image is available in [Docker Hub](https://hub.docker.com/r/supabase/realtime) under the name `supabase/realtime`.
 
-You can use the [docker-compose file](https://github.com/supabase/realtime/blob/master/docker-compose.dev.yml) in this repository as a starting point. Note that this already includes a Postgres database image, so you don't have to set one up yourself.
+
+You can use the [docker-compose file] in this repository as a starting point. Note that this already includes a Postgres database image, so you don't have to set one up yourself.
 
 Fill up the environment variables as appropriate, and then run the image:
 

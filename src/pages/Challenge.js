@@ -20,7 +20,7 @@ function Challenge() {
                 {/* HEADER */}
                 <header className={classnames('hero full', styles.heroBanner)}>
                     {/* HOW */}
-                    <section className={styles.forTracks}>
+                    <section className={styles.forTopics}>
                         <div className="container" color="blue">
                             <div className={classnames('row', styles.responsiveCentered)}>
                                 <div className="col col--6 col--offset-3">
