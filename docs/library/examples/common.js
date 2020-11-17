@@ -3,9 +3,9 @@
  */
 
 export const importJs = `
-import { createClient } from '@supabase/supabase-js'
+import { createClient } from '@njinius/njinius-js'
 
-const supabase = createClient('https://world.supabase.co', 'public-key-bOYapLADERfE')
+const njinius = createClient('https://world.njinius.co', 'public-key-bOYapLADERfE')
 `
 
 export const errorJs = `

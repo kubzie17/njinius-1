@@ -6,7 +6,7 @@ description: 'Host your own Realtime server'
 
 ## Quick Install
 
-You can use our AMI which is registered in the AWS Marketplace under the name [Supabase Realtime](https://aws.amazon.com/marketplace/pp/B089N4FH7N/).
+You can use our AMI which is registered in the AWS Marketplace under the name .
 
 Once the instance is up and running, you first need to point Realtime to listen to your PostgreSQL database. First, SSH to the instance, and edit `/etc/realtime/realtime.env`:
 
@@ -14,7 +14,7 @@ Once the instance is up and running, you first need to point Realtime to listen 
 sudo nano /etc/realtime/realtime.env
 ```
 
-You'll see some environment variables you need to set. If you use our [Supabase Postgres](https://aws.amazon.com/marketplace/pp/B08915TCJ2?ref_=srh_res_product_title) AMI, you simply need to set `DB_HOST` to the Postgres instance's public IP, `DB_PASSWORD` to the password you set with `\password postgres`, and `SECRET_KEY_BASE` to a randomly generated secret which you can get by running the command below:
+You'll see some environment variables you need to set. If you use our  AMI, you simply need to set `DB_HOST` to the Postgres instance's public IP, `DB_PASSWORD` to the password you set with `\password postgres`, and `SECRET_KEY_BASE` to a randomly generated secret which you can get by running the command below:
 
 ```bash
 openssl rand -base64 48

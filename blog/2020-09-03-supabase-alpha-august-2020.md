@@ -51,7 +51,7 @@ You can now enable Email Confirmations for new users. This can be toggled on or 
 The biggest communty contribution to date, [@thorwebdev](https://twitter.com/thorwebdev) added Typescript support to Supabase. He even [live streamed the process](https://twitter.com/thorwebdev/status/1292722189788016641).
 
 
-![This git shows how TypeScript makes it even easier to use Supabase, through VSCode's intellisense.](/img/typescript-support.gif)
+![This git shows how TypeScript makes it even easier to use Supabase, through VSCode's intellisense.]
 
 ### Kaizen
 
@@ -66,7 +66,7 @@ We have a number of small improvements:
 The release of Auth last month accelerated our community growth, based on [Orbit Levels.](https://github.com/orbit-love/orbit-model)
 
 
-![This image shows our community growth. In August we had about 250 active members across GitHub and Twitter.](/img/community-august.png)
+![This image shows our community growth. In August we had about 250 active members across GitHub and Twitter.]
 
 - We received our first enterprise sponsor. Thanks to [@briannekimmel](https://twitter.com/briannekimmel) from [@WorkLifeVC](https://twitter.com/WorkLifeVC) for becoming an [Enterprise Sponsor](https://github.com/sponsors/supabase).
 - [@amorriscode](https://github.com/amorriscode) added Redwood support! [[Pull Request](https://github.com/redwoodjs/redwood/pull/1033)]

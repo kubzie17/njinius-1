@@ -6,9 +6,9 @@ description: 'Host your own Realtime server'
 
 ## Quick Install
 
-You can use our droplet which is registered in the DigitalOcean Marketplace under the name [Supabase Realtime](https://marketplace.digitalocean.com/apps/supabase-realtime).
+You can use our droplet which is registered in the DigitalOcean Marketplace under the name .
 
-Before we start, this droplet enables UFW that allows port `22` for SSH, port `5432` for PostgreSQL, and port `4000` for serving Supabase Realtime subscriptions. If you want to use different ports for your PostgreSQL database or Realtime, you have to configure UFW to allow those ports. Otherwise, read on!
+Before we start, this droplet enables UFW that allows port `22` for SSH, port `5432` for PostgreSQL, and port `4000` for serving  Realtime subscriptions. If you want to use different ports for your PostgreSQL database or Realtime, you have to configure UFW to allow those ports. Otherwise, read on!
 
 Once the droplet is up and running, you first need to point Realtime to listen to your PostgreSQL database. First, SSH to the droplet instance, and edit `/etc/realtime/realtime.env`:
 
@@ -16,7 +16,7 @@ Once the droplet is up and running, you first need to point Realtime to listen t
 nano /etc/realtime/realtime.env
 ```
 
-You'll see some environment variables you will need to set. If you are using our [Supabase Postgres](https://marketplace.digitalocean.com/apps/supabase-postgres) droplet, you simply need to set `DB_HOST` to the Postgres droplet's public IP, `DB_PASSWORD` to the password you set with `\password postgres`, and `SECRET_KEY_BASE` to a randomly generated secret which you can get by running the command below:
+You'll see some environment variables you will need to set. If you are using our  droplet, you simply need to set `DB_HOST` to the Postgres droplet's public IP, `DB_PASSWORD` to the password you set with `\password postgres`, and `SECRET_KEY_BASE` to a randomly generated secret which you can get by running the command below:
 
 ```bash
 openssl rand -base64 48

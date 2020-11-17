@@ -74,7 +74,7 @@ export default function Oss() {
             <div className="col">
               <h2 className="with-underline">Open source</h2>
               <p className="">
-                Supabase is an opensource company, supporting existing open source tools and
+                Njinius is an opensource company, supporting existing open source tools and
                 communities wherever possible.
               </p>
             </div>
@@ -118,11 +118,11 @@ export default function Oss() {
         <div className="container">
           <h2>Community Maintainers</h2>
 
-          <ul class="pills">
+          <ul className="pills">
             {maintainerPills.map((x) => (
               <li
                 key={x}
-                class={`pills__item ${activePill == x ? 'pills__item--active' : ''}`}
+                className={`pills__item ${activePill == x ? 'pills__item--active' : ''}`}
                 onClick={() => setActivePill(x)}
               >
                 {x}
