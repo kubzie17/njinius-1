@@ -23,7 +23,7 @@ function Home() {
             <div className="col col--5">
               <h2 className="hero__title">Welcome to NJinius Hub where iron sharpens iron...</h2>
               <p className="hero__subtitle">
-                Njinius is a one stop shop for a variety of knowledge between the channels of software, business and book clubs. Find the track right for you and induldge in a world of learning, or even shar your knowledge and expertise. So come, join us and lets do something NJinius!
+                Njinius is a one stop shop for a variety of knowledge between the channels of software, business and book clubs. Find the topic right for you and induldge in a world of learning, or even shar your knowledge and expertise. So come, join us and lets do something NJinius!
               </p>
               <div>
               <Link
@@ -79,18 +79,18 @@ function Home() {
     </main>
 
     {/* Something for everyne */}
-    <section className={styles.forTracks}>
+    <section className={styles.forTopics}>
       <div className="container">
         <div className={classnames('row', styles.responsiveCentered)}>
           <div className="col col--6 col--offset-3">
             <h2 className="">Something For Everyone</h2>
             <p className="">
-              Below are different <strong className="has-emphasis"> Tracks</strong> so you so there is definitely something for everyone. So why don't
-                  you pick your favorite track and get started with fun learning and collaboration
+              Below are different <strong className="has-emphasis"> Topics</strong> so you so there is definitely something for everyone. So why don't
+                  you pick your favorite topic and get started with fun learning and collaboration
             </p>
           </div>
         </div>
-        <div className="ForTracks">
+        <div className="ForTopics">
           <div className="row">
             <div className="ButtonTabs col col--3">
               <div>
@@ -125,10 +125,10 @@ function Home() {
                     <br></br>
                     <br></br>
                     <br></br>
-                    <Card.Text >Some intro about what Software Track is about. typing this longer to be able to test the responsivenes on mobile </Card.Text>
+                    <Card.Text >Some intro about what Software Topics is about. typing this longer to be able to test the responsivenes on mobile </Card.Text>
                     <br></br>
-                    <Link to={useBaseUrl('docs/track/software/index')}>
-                      <Button variant="primary" to='docs/track/business/index' block>read more</Button>
+                    <Link to={useBaseUrl('docs/topics/software/index')}>
+                      <Button variant="primary" to='docs/topics/business/index' block>read more</Button>
                     </Link>
                   </Card.Body>
                 </Card>
@@ -140,10 +140,10 @@ function Home() {
                     <br></br>
                     <br></br>
                     <br></br>
-                    <Card.Text >Some intro about what Business Track is about</Card.Text>
+                    <Card.Text >Some intro about what Business Topics is about</Card.Text>
                     <br></br>
-                    <Link to={useBaseUrl('docs/track/business/index')}>
-                      <Button variant="primary" to='docs/track/business/index' block>read more</Button>
+                    <Link to={useBaseUrl('docs/topics/business/index')}>
+                      <Button variant="primary" to='docs/topics/business/index' block>read more</Button>
                     </Link>
                   </Card.Body>
 
@@ -156,10 +156,10 @@ function Home() {
                     <br></br>
                     <br></br>
                     <br></br>
-                    <Card.Text >Some intro about what Book club Track is about</Card.Text>
+                    <Card.Text >Some intro about what Book Club Topic is about</Card.Text>
                     <br></br>
-                    <Link to={useBaseUrl('docs/track/bookClub/index')}>
-                      <Button variant="primary" to='docs/track/business/index' block>read more</Button>
+                    <Link to={useBaseUrl('docs/topics/bookClub/index')}>
+                      <Button variant="primary" to='docs/topics/business/index' block>read more</Button>
                     </Link>
                   </Card.Body>
                 </Card>

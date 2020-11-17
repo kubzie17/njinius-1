@@ -12,16 +12,16 @@ function Archive() {
     const context = useDocusaurusContext()
     const { siteConfig = {} } = context
     return (
-        <Layout title="Tracks" description={siteConfig.tagline}>
+        <Layout title="Topics" description={siteConfig.tagline}>
             <main className="ArchivePage" >
                 <header className={classnames('hero full', styles.heroBanner)}>
-                    <section className={styles.forTracks}>
+                    <section className={styles.forTopics}>
                         <div className="container" color="blue">
                             <div className={classnames('row', styles.responsiveCentered)}>
                                 <div className="col col--6 col--offset-3">
                                     <h2 className="">Topics</h2>
                                     <p className="">
-                                        Njinius mostly consist of 3 tracks, Business, Software and Bookcase. Pick your track and get involved
+                                        Njinius mostly consist of 3 topics, Business, Software and Bookcase. Pick your topics and get involved
                                     </p>
                                 </div>
                             </div>
@@ -30,8 +30,8 @@ function Archive() {
                                 <div className={'col col--4 '}>
                                     <div>
                                         <Link
-                                            to={useBaseUrl('docs/track/business/index')}>
-                                            <img className="diagram" src="/static/img/businesstrack.jpg" height="261.06" width="348" />
+                                            to={useBaseUrl('docs/topic/business/index')}>
+                                            <img className="diagram" src="/static/img/businesstopic.jpg" height="261.06" width="348" />
                                         </Link>
                                     </div>
 
@@ -39,7 +39,7 @@ function Archive() {
                                         <HowCard
                                             title="Business"
                                             description={
-                                                <>For everything Business, the business track is the way to go</>
+                                                <>For everything Business, the business topic is the way to go</>
                                             }
                                             featureTitle="What it entails?"
                                             features={[
@@ -54,15 +54,15 @@ function Archive() {
                                 <div className={'col col--4 '}>
                                     <div>
                                         <Link
-                                            to={useBaseUrl('docs/track/software/index')}>
-                                            <img className="diagram" src="/static/img/softwaretrack.jpg" height="261.06" width="348" />
+                                            to={useBaseUrl('docs/topics/software/index')}>
+                                            <img className="diagram" src="/static/img/softwaretopic.jpg" height="261.06" width="348" />
                                         </Link>
                                     </div>
 
                                     <div>
                                         <HowCard
                                             title="Software"
-                                            description={<>Enter the software track and join in everything software</>}
+                                            description={<>Enter the software topic and join in everything software</>}
                                             featureTitle="What you can expect"
                                             features={[
                                                 'Raise software issues/challenges',
@@ -77,7 +77,7 @@ function Archive() {
 
                                     <div>
                                         <Link
-                                            to={useBaseUrl('docs/track/bookClub/index')}>
+                                            to={useBaseUrl('docs/topics/bookClub/index')}>
                                             <img className="diagram" src="/static/img/bookClub2.jpg" height="261.06" width="348" />
                                         </Link>
                                     </div>

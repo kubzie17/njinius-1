@@ -607,14 +607,14 @@ div[class^="codeBlockContent"] , div[class*=" codeBlockContent"], .prism-code {
 }
 
 /* HomePage */
-.ForTracks .row {
+.ForTopics .row {
   display: flex;
   flex-direction: row-reverse;
 }
-.ForTracks .button {
+.ForTopics .button {
   text-align: left;
 }
-.ForTracks .button.button--link:hover {
+.ForTopics .button.button--link:hover {
   text-decoration: none;
   transition: all 0.2s ease;
   opacity: 0.8;

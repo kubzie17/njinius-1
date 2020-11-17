@@ -77,7 +77,7 @@ module.exports = {
         },
 
         {
-          to: '/tracks',
+          to: '/topics',
           label: 'Topics',
           position: 'right',
         },
