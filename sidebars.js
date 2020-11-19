@@ -8,50 +8,7 @@
 module.exports = {
 
   docs: [
-    { type: 'category', label: 'Introduction', items: ['about', 'faq'] },
-
-    {
-      type: 'category',
-      label: 'Topic',
-
-      items: [
-        'topics/index',
-        {
-          type: 'category',
-          label: 'Software',
-          items:[
-            'topics/software/index',
-            'topics/software/forLoop',
-            'topics/software/functionsAndParameters',
-            'topics/software/inheritance',
-            'topics/software/overload',
-            'topics/software/passByReference',
-            'topics/software/pointers',
-            'topics/software/polymorphism',
-            'topics/software/reference',
-            'topics/software/switch',
-            'topics/software/whileLoop',
-            'topics/software/array',
-            'topics/software/classMethods',
-            'topics/software/constructors',
-            'topics/software/dataTypes',
-            'topics/software/exceptions',
-            'topics/software/abstraction',
-            'topics/software/property',
-            'topics/software/accessModifiers',
-            'topics/software/methods',
-            'topics/software/deconstructor',
-            'topics/software/memberInitialisation',
-          ]
-        },
-       
-        
-      ]
-    },
-
-    {type: 'category', label: 'Live Sessions', items: ['doc6']},
-
-    {type: 'category', label: 'Contribute', items: ['contribute']},
+    { type: 'category', label: 'Introduction', items: ['about', 'faq'] }, 
 
     {
       type: 'category',
@@ -72,15 +29,15 @@ module.exports = {
       label: 'Business',
       collapsed: false,
       items:[
-        'topicss/business/about',
-        'topicss/business/index',
-        'topicss/business/entrepreneur',
-        'topicss/business/marketing',
-        'topicss/business/strategicPlanning',
-        'topicss/business/accountingAndFinance',
-        'topicss/business/technology',
-        'topicss/business/operation',
-        'topicss/business/humanResources',],
+        'topics/business/about',
+        'topics/business/index',
+        'topics/business/entrepreneur',
+        'topics/business/marketing',
+        'topics/business/strategicPlanning',
+        'topics/business/accountingAndFinance',
+        'topics/business/technology',
+        'topics/business/operation',
+        'topics/business/humanResources',],
     },
   ],
   
@@ -89,7 +46,7 @@ module.exports = {
       type: 'category',
       label: 'Book Club',
       collapsed: false,
-      items:['topicss/bookClub/about'],
+      items:['topics/bookClub/about'],
     },
   ],
 
@@ -99,19 +56,41 @@ module.exports = {
       label: 'Software',
       collapsed: false,
       items:[
-        'topicss/software/about',
+        'topics/software/about',
         {
           type: 'category',
           label: 'programming',
           collapsed: false,
           items:[
-            'topicss/software/programming/about',
+            'topics/software/programming/about',
+            'topics/software/programming/forLoop',
+            'topics/software/programming/functionsAndParameters',
+            'topics/software/programming/inheritance',
+            'topics/software/programming/overload',
+            'topics/software/programming/passByReference',
+            'topics/software/programming/pointers',
+            'topics/software/programming/polymorphism',
+            'topics/software/programming/reference',
+            'topics/software/programming/switch',
+            'topics/software/programming/whileLoop',
+            'topics/software/programming/array',
+            'topics/software/programming/classMethods',
+            'topics/software/programming/constructors',
+            'topics/software/programming/dataTypes',
+            'topics/software/programming/exceptions',
+            'topics/software/programming/abstraction',
+            'topics/software/programming/property',
+            'topics/software/programming/accessModifiers',
+            'topics/software/programming/methods',
+            'topics/software/programming/deconstructor',
+            'topics/software/programming/memberInitialisation',
+
             {
               type: 'category',
               label: 'C#',
               collapsed: false,
               items:[
-                'topicss/software/programming/csharp/about'
+                'topics/software/programming/csharp/about'
               ],
             },
             {
@@ -119,7 +98,7 @@ module.exports = {
               label: 'C++',
               collapsed: false,
               items:[
-                'topicss/software/programming/c++/about'
+                'topics/software/programming/c++/about'
               ],
             },
             {
@@ -127,7 +106,7 @@ module.exports = {
               label: 'Python',
               collapsed: false,
               items:[
-                'topicss/software/programming/python/about'
+                'topics/software/programming/python/about'
               ],
             },
             {
@@ -135,7 +114,7 @@ module.exports = {
               label: 'JavaScript',
               collapsed: false,
               items:[
-                'topicss/software/programming/javascript/about'
+                'topics/software/programming/javascript/about'
               ],
             },
           ],
@@ -145,7 +124,7 @@ module.exports = {
           label: 'Tools',
           collapsed: false,
           items:[
-            'topicss/software/tools/about'
+            'topics/software/tools/about'
           ],
         },
 
@@ -154,10 +133,21 @@ module.exports = {
           label: 'IDEs',
           collapsed: false,
           items:[
-            'topicss/software/ide/about'
+            'topics/software/ide/about'
           ],
         },
+        
     ],
     },
   ],
+
+  contributeItems: [
+    {
+      type: 'category',
+      label: 'Contribute',
+      collapsed: false,
+      items:['contribute/about'],
+    },
+  ],
+
 }

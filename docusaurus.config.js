@@ -69,7 +69,7 @@ module.exports = {
           className: 'navbar-item-pages',
         },
         {
-          to: '/docs/contribute',
+          to: 'docs/contribute/about',
           label: 'Contribute',
           position: 'left',
           className: 'navbar-item-pages',
@@ -105,15 +105,15 @@ module.exports = {
           items: [
             {
               label: 'Business',
-              to: 'docs/topicss/business/about',
+              to: 'docs/topics/business/about',
             },
             {
               label: 'Software',
-              to: 'docs/topicss/software/about'
+              to: 'docs/topics/software/about'
             },
             {
               label: 'Book Club',
-              to: '/docs/topicss/bookClub/about',
+              to: '/docs/topics/bookClub/about',
             },
         ]
         },

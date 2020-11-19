@@ -31,7 +31,7 @@ function Home() {
                   'button hero--button button--md button--secondary button--outline responsive-button',
                   styles.button
                 )}
-                to={useBaseUrl('docs/doc7')}
+                to={useBaseUrl('docs/contribute/about')}
                 style={{ marginLeft: 200, marginTop: 10 }}
                  >
                 Contribte
@@ -127,8 +127,8 @@ function Home() {
                     <br></br>
                     <Card.Text >Some intro about what Software Topics is about. typing this longer to be able to test the responsivenes on mobile </Card.Text>
                     <br></br>
-                    <Link to={useBaseUrl('docs/topics/software/index')}>
-                      <Button variant="primary" to='docs/topics/business/index' block>read more</Button>
+                    <Link to={useBaseUrl('docs/topics/software/about')}>
+                      <Button variant="primary" block>read more</Button>
                     </Link>
                   </Card.Body>
                 </Card>
@@ -142,8 +142,8 @@ function Home() {
                     <br></br>
                     <Card.Text >Some intro about what Business Topics is about</Card.Text>
                     <br></br>
-                    <Link to={useBaseUrl('docs/topics/business/index')}>
-                      <Button variant="primary" to='docs/topics/business/index' block>read more</Button>
+                    <Link to={useBaseUrl('docs/topics/business/about')}>
+                      <Button variant="primary" block>read more</Button>
                     </Link>
                   </Card.Body>
 
@@ -158,8 +158,8 @@ function Home() {
                     <br></br>
                     <Card.Text >Some intro about what Book Club Topic is about</Card.Text>
                     <br></br>
-                    <Link to={useBaseUrl('docs/topics/bookClub/index')}>
-                      <Button variant="primary" to='docs/topics/business/index' block>read more</Button>
+                    <Link to={useBaseUrl('docs/topics/bookClub/about')}>
+                      <Button variant="primary" block>read more</Button>
                     </Link>
                   </Card.Body>
                 </Card>
