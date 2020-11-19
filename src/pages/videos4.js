@@ -22,7 +22,7 @@ function Video4() {
                         <div className="container" color="blue">
                             <div className={classnames('row', styles.responsiveCentered)}>
                                 <div className="col col--6 col--offset-3">
-                                    <h2 className="">Videos</h2>
+                                    <h2 className="">Book Club Sessions</h2>
                                     <p className="">Are you more of a visual learner, then look no further. Find the topic of your interest below and and enjoy the turorial </p>
                                 </div>
                             </div>

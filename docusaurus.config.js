@@ -65,21 +65,57 @@ module.exports = {
         {
           to: '/blog',
           label: 'Blogs',
-          position: 'right',
+          position: 'left',
+          className: 'navbar-item-pages',
+        },
+        {
+          to: '/docs/contribute',
+          label: 'Contribute',
+          position: 'left',
           className: 'navbar-item-pages',
         },
         { to: '/docs/doc6', label: 'Live Sessions', position: 'right' },
         { to: '/Challenge', label: 'Challenge', position: 'right' },
         {
           to: '/videos',
+          activeBasePath: 'Videos',
           label: 'Videos Sessions',
           position: 'right',
+          items: [
+            {
+              label:'Business Session',
+              to: '/videos2',
+            },
+            {
+              label:'Software Session',
+              to: '/videos3',
+            },
+            {
+              label:'Book Club Session',
+              to: '/videos4',
+            },
+          ]
         },
 
         {
           to: '/topics',
+          activeBasePath: 'Topics',
           label: 'Topics',
           position: 'right',
+          items: [
+            {
+              label: 'Business',
+              to: 'docs/topicss/business/about',
+            },
+            {
+              label: 'Software',
+              to: 'docs/topicss/software/about'
+            },
+            {
+              label: 'Book Club',
+              to: '/docs/topicss/bookClub/about',
+            },
+        ]
         },
 
         {
