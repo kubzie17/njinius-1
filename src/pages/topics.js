@@ -30,7 +30,7 @@ function Archive() {
                                 <div className={'col col--4 '}>
                                     <div>
                                         <Link
-                                            to={useBaseUrl('docs/topic/business/index')}>
+                                            to={useBaseUrl('docs/topics/software/index')}>
                                             <img className="diagram" src="/static/img/businesstopic.jpg" height="261.06" width="348" />
                                         </Link>
                                     </div>
@@ -77,7 +77,7 @@ function Archive() {
 
                                     <div>
                                         <Link
-                                            to={useBaseUrl('docs/topics/bookClub/index')}>
+                                            to={useBaseUrl('docs/topics/software/index')}>
                                             <img className="diagram" src="/static/img/bookClub2.jpg" height="261.06" width="348" />
                                         </Link>
                                     </div>

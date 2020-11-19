@@ -6,7 +6,8 @@
  */
 
 module.exports = {
-  "docs": [
+
+  docs: [
     { type: 'category', label: 'Introduction', items: ['about', 'faq'] },
 
     {
@@ -43,33 +44,14 @@ module.exports = {
             'topics/software/memberInitialisation',
           ]
         },
-        {
-          type: 'category',
-          label: 'Business',
-          items: [
-            'topics/business/index',
-            'topics/business/entrepreneur',
-            'topics/business/marketing',
-            'topics/business/strategicPlanning',
-            'topics/business/accountingAndFinance',
-            'topics/business/technology',
-            'topics/business/operation',
-            'topics/business/humanResources',
-          ]
-        },
-        {
-          type: 'category',
-          label: 'Book Club',
-          items: [
-            'topics/bookClub/index',
-          ]
-        },
+       
+        
       ]
     },
 
     {type: 'category', label: 'Live Sessions', items: ['doc6']},
 
-    {type: 'category', label: 'Contribute', items: ['doc7']},
+    {type: 'category', label: 'Contribute', items: ['contribute']},
 
     {
       type: 'category',
@@ -83,5 +65,99 @@ module.exports = {
       ]
     },
 
+  ],
+  businessItems: [
+    {
+      type: 'category',
+      label: 'Business',
+      collapsed: false,
+      items:[
+        'topicss/business/about',
+        'topicss/business/index',
+        'topicss/business/entrepreneur',
+        'topicss/business/marketing',
+        'topicss/business/strategicPlanning',
+        'topicss/business/accountingAndFinance',
+        'topicss/business/technology',
+        'topicss/business/operation',
+        'topicss/business/humanResources',],
+    },
+  ],
+  
+  bookclubItems: [
+    {
+      type: 'category',
+      label: 'Book Club',
+      collapsed: false,
+      items:['topicss/bookClub/about'],
+    },
+  ],
+
+  softwareItems: [
+    {
+      type: 'category',
+      label: 'Software',
+      collapsed: false,
+      items:[
+        'topicss/software/about',
+        {
+          type: 'category',
+          label: 'programming',
+          collapsed: false,
+          items:[
+            'topicss/software/programming/about',
+            {
+              type: 'category',
+              label: 'C#',
+              collapsed: false,
+              items:[
+                'topicss/software/programming/csharp/about'
+              ],
+            },
+            {
+              type: 'category',
+              label: 'C++',
+              collapsed: false,
+              items:[
+                'topicss/software/programming/c++/about'
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Python',
+              collapsed: false,
+              items:[
+                'topicss/software/programming/python/about'
+              ],
+            },
+            {
+              type: 'category',
+              label: 'JavaScript',
+              collapsed: false,
+              items:[
+                'topicss/software/programming/javascript/about'
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Tools',
+          collapsed: false,
+          items:[
+            'topicss/software/tools/about'
+          ],
+        },
+
+        {
+          type: 'category',
+          label: 'IDEs',
+          collapsed: false,
+          items:[
+            'topicss/software/ide/about'
+          ],
+        },
+    ],
+    },
   ],
 }
