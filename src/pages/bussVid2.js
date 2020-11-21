@@ -9,11 +9,11 @@ import { Container, Row} from 'react-bootstrap'
 import vidStyles from './video.css'
 
 
-function Video2() {
+function BussVid1() {
     const context = useDocusaurusContext()
     const { siteConfig = {} } = context
     return (
-        <Layout title="Programming" description={siteConfig.tagline}>
+        <Layout title="Businesss" description={siteConfig.tagline}>
             <main className="ArchivePage" >
                 {/* HEADER */}
                 <header className={classnames('hero full', styles.heroBanner)}>
@@ -22,7 +22,7 @@ function Video2() {
                         <div className="container" color="blue">
                             <div className={classnames('row', styles.responsiveCentered)}>
                                 <div className="col col--6 col--offset-3">
-                                    <h2 className="">Programming Sessions</h2>
+                                    <h2 className="">Bussiness Sessions</h2>
                                     <p className="">Are you more of a visual learner, then look no further. Find the topic of your interest below and and enjoy the turorial </p>
                                 </div>
                             </div>
@@ -31,26 +31,24 @@ function Video2() {
                                 <Container>
                                     <div className="App">
 
-                                        <h2>Data Types</h2>
+                                        <h2>Businss Intelligence</h2>
                                         <div className={vidStyles.videoContainer} 
                                             style={{alignItems: 'center',
                                             display: 'inline',
                                             float: 'left',
                                             border: '1px solid black',
-                                            margin: '5px 10px 10px 0px',}} >
-                                            <iframe width="560" height="315" src='https://www.youtube.com/embed/eyB2Ikcc5oI'
+                                            margin: '5px 10px 10px 0px',}} 
+                                            >
+                                            <iframe width="560" height="315" src='https://www.youtube.com/embed/jkCCnwvO_fg'
                                                 frameBorder='0'
                                                 allow='autoplay; encrypted-media; accelerometer; gyroscope; picture-in-picture'
                                                 allowFullScreen
-                                                title='video'
                                             />
                                         </div>
-                                        <h6>What are Data Types?</h6>
+                                        <h6>What is Business Intelligence?</h6>
                                         <p className="description">
-                                            Data type is essentially the format of which a specific variable, or piece of data is stored containing a specific type or range of values.
-                                            When computer programs store data in variables, each variable must be assigned a specific data type. Some common data types include integers,
-                                            floating point numbers, characters, strings, and arrays.
-                                        </p>
+                                            TO DO
+                                        </p>                                     
                                     </div>
                                 </Container>
                             </Row>
@@ -59,25 +57,24 @@ function Video2() {
                                 <Container>
                                     <div className="App">
 
-                                        <h2>Deconstructors</h2>
+                                        <h2>Operations Management</h2>
                                         <div className={vidStyles.videoContainer} 
                                             style={{alignItems: 'center',
                                             display: 'inline',
                                             float: 'left',
                                             border: '1px solid black',
                                             margin: '5px 10px 10px 0px',}} >
-                                            <iframe width="560" height="315" src='https://www.youtube.com/embed/D8cWquReFqw'
+                                            <iframe width="560" height="315" src='https://www.youtube.com/embed/DEuzzLled6k'
                                                 frameBorder='0'
                                                 allow='autoplay; encrypted-media; accelerometer; gyroscope; picture-in-picture'
                                                 allowFullScreen
                                                 title='video'
                                             />
-                                        </div>
-                                        <h6>What are Deconstructors?</h6>
+                                        </div>   
+                                        <h6>What is Operations Management?</h6>
                                         <p className="description">
-                                        Deconstructors, or more commonly known, destructors, are member functions which destruct or delete on object once its out of scope.
-                                        Destructors are automatically called take no arguments, nor do they have a return type
-                                        </p>
+                                            TO DO
+                                        </p>                                      
                                     </div>
                                 </Container>
                             </Row>
@@ -86,27 +83,29 @@ function Video2() {
                                 <Container>
                                     <div className="App">
 
-                                        <h2>Exception Handling</h2>
+                                        <h2>Human Resources</h2>
                                         <div className={vidStyles.videoContainer} 
                                             style={{alignItems: 'center',
                                             display: 'inline',
                                             float: 'left',
                                             border: '1px solid black',
                                             margin: '5px 10px 10px 0px',}} >
-                                            <iframe width="560" height="315" src='https://www.youtube.com/embed/EyXXLpFriMc'
+                                            <iframe width="560" height="315" src='https://www.youtube.com/embed/aA1OlFHZWtU'
                                                 frameBorder='0'
                                                 allow='autoplay; encrypted-media; accelerometer; gyroscope; picture-in-picture'
                                                 allowFullScreen
                                                 title='video'
                                             />
                                         </div>
-                                        <h6>What is exception Handling?</h6>
+                                        <h6>What is Strategic Planning?</h6>
                                         <p className="description">
-                                        Exception handling is responding to exceptions when a computer program runs. An exception occurs when an unexpected event 
-                                        happens that requires special processing. Examples include a user providing abnormal input, a file system error being 
-                                        encountered when trying to read or write a file, or a program attempting to divide by zero. Exception handling attempts 
-                                        to gracefully handle these situations so that a program (or worse, an entire system) does not crash
-                                        </p>
+                                            The process of hiring and developing employees so that they become more valuable to the organization. 
+                                            Human Resource Management includes conducting job analyses, planning personnel needs, recruiting the 
+                                            right people for the job, orienting and training, managing wages and salaries, providing benefits and incentives, 
+                                            evaluating performance, resolving disputes, and communicating with all employees at all levels. Examples of core 
+                                            qualities of HR management are extensive knowledge of the industry, leadership, and effective negotiation skills. 
+                                            Formerly called personnel management.
+                                        </p>  
                                     </div>
                                 </Container>
                             </Row>
@@ -115,26 +114,28 @@ function Video2() {
                                 <Container>
                                     <div className="App">
 
-                                        <h2>Functions and Parameters</h2>
+                                        <h2>Accounting and Finance</h2>
                                         <div className={vidStyles.videoContainer} 
                                             style={{alignItems: 'center',
                                             display: 'inline',
                                             float: 'left',
                                             border: '1px solid black',
                                             margin: '5px 10px 10px 0px',}} >
-                                            <iframe width="560" height="315" src='https://www.youtube.com/embed/fQ_CBGVfGbM'
+                                            <iframe width="560" height="315" src='https://www.youtube.com/embed/YjkRSlTxsZM'
                                                 frameBorder='0'
                                                 allow='autoplay; encrypted-media; accelerometer; gyroscope; picture-in-picture'
                                                 allowFullScreen
                                                 title='video'
                                             />
                                         </div>
-                                        <h6>What are functions and Parameters?</h6>
+                                        <h6>What is Accounting and Finance?</h6>
                                         <p className="description">
-                                            A function is a piece of code which only runs when it is called. Functions usually take in parameters which are passed down from the 
-                                            block of code of which it was called from. Parameters are also known as arguments. Parameters are just values you supply to the 
-                                            function so that the function can do something utilising those values
-                                        </p>
+                                            learn about external financial statements, internal managerial accounting reports, income tax systems 
+                                            and how they interact in business decision-making. in this course, we review the accounting equation, 
+                                            the three primary financial statements, how to use accounting basics to aid decision making, and how income 
+                                            taxes figure into business and personal decisions.
+        
+                                        </p>               
                                     </div>
                                 </Container>
                             </Row>
@@ -142,60 +143,44 @@ function Video2() {
                             <Row>
                                 <Container>
                                     <div className="App">
-
-                                        <h2>Inheritance</h2>
+                                        
+                                        <h2>Business Technology</h2>
                                         <div className={vidStyles.videoContainer} 
                                             style={{alignItems: 'center',
                                             display: 'inline',
                                             float: 'left',
                                             border: '1px solid black',
                                             margin: '5px 10px 10px 0px',}} >
-                                            <iframe width="560" height="315" src='https://www.youtube.com/embed/X8nYM8wdNRE'
+                                            <iframe width="560" height="315" src='https://www.youtube.com/embed/ODS_jCocCwg'
                                                 frameBorder='0'
                                                 allow='autoplay; encrypted-media; accelerometer; gyroscope; picture-in-picture'
                                                 allowFullScreen
                                                 title='video'
                                             />
                                         </div>
-                                        <h6>What is inheritance?</h6>
+                                        <h6>What is Business Technology?</h6>
                                         <p className="description">
-                                        Inheritance is a mechanism where you can to derive a class from another class for a hierarchy of classes that share a set of 
-                                        attributes and methods.You can use it to declare different kinds of exceptions, add custom logic to existing frameworks, and even 
-                                        map your domain model to a database. It allows software engineers to create class hierarchies, where classes and objects inherit 
-                                        properties and behaviors from their 
-                                        parent (or super) class. A class that inherits from a parent (or super) class is called a subclass or child class, and objects 
-                                        that receive properties and behaviors from a parent through inheritance are referred to as child objects.
+                                            TO DO
                                         </p>
                                     </div>
                                 </Container>
-                            </Row> 
+                            </Row>   
                         </div>
                     </section>
                 </header>
             </main>
             <Link
-                    className={classnames(
-                      'button hero--button button--md button--secondary button--outline responsive-button',
-                      styles.button
-                    )}
-                    to={useBaseUrl('/videos')}
-                    style={{ marginLeft: 200, marginTop: 10 }}
-                  >
-                    Previous
+                className={classnames(
+                    'button hero--button button--md button--secondary button--outline responsive-button',
+                    styles.button
+                )}
+                to={useBaseUrl('/bussVid1')}
+                style={{ marginLeft: 200, marginTop: 10, float: "center" }}
+                >
+                previous
             </Link>
-            <Link style={{position: "left", justifycontent: "right"}}
-                    className={classnames(
-                      'button hero--button button--md button--secondary button--outline responsive-button',
-                      styles.button, 
-                    )}
-                    to={useBaseUrl('/videos3')}
-                    style={{ marginRight: 200, marginTop: 10, float: "right" }}
-                  >
-                    Next
-            </Link>
-         
         </Layout >
     )
 }
 
-export default Video2
+export default BussVid1

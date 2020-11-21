@@ -84,15 +84,15 @@ module.exports = {
           items: [
             {
               label:'Business Session',
-              to: '/videos2',
+              to: '/bussVid1',
             },
             {
               label:'Software Session',
-              to: '/videos3',
+              to: '/videos',
             },
             {
               label:'Book Club Session',
-              to: '/videos4',
+              to: '/bookVid1',
             },
           ]
         },

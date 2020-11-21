@@ -1,19 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import classnames from 'classnames'
 import Layout from '@theme/Layout'
 import Link from '@docusaurus/Link'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import useBaseUrl from '@docusaurus/useBaseUrl'
 import styles from './styles.module.css'
-import { Container, Row} from 'react-bootstrap'
 import vidStyles from './video.css'
+import { Container, Row} from 'react-bootstrap'
 
 
-function Video2() {
+function bookVid1() {
     const context = useDocusaurusContext()
     const { siteConfig = {} } = context
     return (
-        <Layout title="Programming" description={siteConfig.tagline}>
+        <Layout title="Book Club" description={siteConfig.tagline}>
             <main className="ArchivePage" >
                 {/* HEADER */}
                 <header className={classnames('hero full', styles.heroBanner)}>
@@ -22,7 +22,7 @@ function Video2() {
                         <div className="container" color="blue">
                             <div className={classnames('row', styles.responsiveCentered)}>
                                 <div className="col col--6 col--offset-3">
-                                    <h2 className="">Programming Sessions</h2>
+                                    <h2 className="">Book Club Sessions</h2>
                                     <p className="">Are you more of a visual learner, then look no further. Find the topic of your interest below and and enjoy the turorial </p>
                                 </div>
                             </div>
@@ -31,26 +31,27 @@ function Video2() {
                                 <Container>
                                     <div className="App">
 
-                                        <h2>Data Types</h2>
+                                        <h2>Abstraction</h2>
                                         <div className={vidStyles.videoContainer} 
                                             style={{alignItems: 'center',
                                             display: 'inline',
                                             float: 'left',
                                             border: '1px solid black',
-                                            margin: '5px 10px 10px 0px',}} >
-                                            <iframe width="560" height="315" src='https://www.youtube.com/embed/eyB2Ikcc5oI'
+                                            margin: '5px 10px 10px 0px',}} 
+                                            >
+                                            <iframe width="560" height="315" src='https://www.youtube.com/embed/E7wJTI-1dvQ'
                                                 frameBorder='0'
                                                 allow='autoplay; encrypted-media; accelerometer; gyroscope; picture-in-picture'
                                                 allowFullScreen
-                                                title='video'
                                             />
                                         </div>
-                                        <h6>What are Data Types?</h6>
+                                        <h6>What is Abstraction?</h6>
                                         <p className="description">
-                                            Data type is essentially the format of which a specific variable, or piece of data is stored containing a specific type or range of values.
-                                            When computer programs store data in variables, each variable must be assigned a specific data type. Some common data types include integers,
-                                            floating point numbers, characters, strings, and arrays.
-                                        </p>
+                                            Abstraction is one of the key concepts of object-oriented programming (OOP) languages. Its main goal is to handle complexity by 
+                                            hiding unnecessary details from the user. That enables the user to implement more complex logic on top of the provided abstraction 
+                                            without understanding or even thinking about all the hidden complexity.That’s a very generic concept that’s not limited to object-oriented 
+                                            programming. You can find it everywhere in the real world.
+                                        </p>                                     
                                     </div>
                                 </Container>
                             </Row>
@@ -59,25 +60,26 @@ function Video2() {
                                 <Container>
                                     <div className="App">
 
-                                        <h2>Deconstructors</h2>
+                                        <h2>Access Modifiers</h2>
                                         <div className={vidStyles.videoContainer} 
                                             style={{alignItems: 'center',
                                             display: 'inline',
                                             float: 'left',
                                             border: '1px solid black',
                                             margin: '5px 10px 10px 0px',}} >
-                                            <iframe width="560" height="315" src='https://www.youtube.com/embed/D8cWquReFqw'
+                                            <iframe width="560" height="315" src='https://www.youtube.com/embed/5Z2g78DSxPs'
                                                 frameBorder='0'
                                                 allow='autoplay; encrypted-media; accelerometer; gyroscope; picture-in-picture'
                                                 allowFullScreen
                                                 title='video'
                                             />
-                                        </div>
-                                        <h6>What are Deconstructors?</h6>
+                                        </div>   
+                                        <h6>What are Access Modifiers?</h6>
                                         <p className="description">
-                                        Deconstructors, or more commonly known, destructors, are member functions which destruct or delete on object once its out of scope.
-                                        Destructors are automatically called take no arguments, nor do they have a return type
-                                        </p>
+                                            Access modifiers are used to specify the scope of accessibility of a member of a class or type of the class itself. For example, a public 
+                                            class is accessible to everyone without any restrictions, while an internal class may be accessible to the assembly only. Access modifiers
+                                            are used to implement encapsulation of OOP. Access modifiers allow you to define who does or who doesn't have access to certain features.
+                                        </p>                                      
                                     </div>
                                 </Container>
                             </Row>
@@ -86,27 +88,27 @@ function Video2() {
                                 <Container>
                                     <div className="App">
 
-                                        <h2>Exception Handling</h2>
+                                        <h2>Arrays</h2>
                                         <div className={vidStyles.videoContainer} 
                                             style={{alignItems: 'center',
                                             display: 'inline',
                                             float: 'left',
                                             border: '1px solid black',
                                             margin: '5px 10px 10px 0px',}} >
-                                            <iframe width="560" height="315" src='https://www.youtube.com/embed/EyXXLpFriMc'
+                                            <iframe width="560" height="315" src='https://www.youtube.com/embed/1kLw8kZuccQ'
                                                 frameBorder='0'
                                                 allow='autoplay; encrypted-media; accelerometer; gyroscope; picture-in-picture'
                                                 allowFullScreen
                                                 title='video'
                                             />
                                         </div>
-                                        <h6>What is exception Handling?</h6>
+                                        <h6>What are Arrays?</h6>
                                         <p className="description">
-                                        Exception handling is responding to exceptions when a computer program runs. An exception occurs when an unexpected event 
-                                        happens that requires special processing. Examples include a user providing abnormal input, a file system error being 
-                                        encountered when trying to read or write a file, or a program attempting to divide by zero. Exception handling attempts 
-                                        to gracefully handle these situations so that a program (or worse, an entire system) does not crash
-                                        </p>
+                                        An array is a data structure consisting of a collection of elements (values or variables), each identified by at least one array index or key. 
+                                        Depending on the language, array types may overlap (or be identified with) other data types that describe aggregates of values, such as lists 
+                                        and strings. Array types are often implemented by array data structures, but sometimes by other means, such as hash tables, linked lists, or 
+                                        search trees. In Python, the built-in array data structure is a list.
+                                        </p>  
                                     </div>
                                 </Container>
                             </Row>
@@ -115,26 +117,27 @@ function Video2() {
                                 <Container>
                                     <div className="App">
 
-                                        <h2>Functions and Parameters</h2>
+                                        <h2>Classes</h2>
                                         <div className={vidStyles.videoContainer} 
                                             style={{alignItems: 'center',
                                             display: 'inline',
                                             float: 'left',
                                             border: '1px solid black',
                                             margin: '5px 10px 10px 0px',}} >
-                                            <iframe width="560" height="315" src='https://www.youtube.com/embed/fQ_CBGVfGbM'
+                                            <iframe width="560" height="315" src='https://www.youtube.com/embed/2BP8NhxjrO0'
                                                 frameBorder='0'
                                                 allow='autoplay; encrypted-media; accelerometer; gyroscope; picture-in-picture'
                                                 allowFullScreen
                                                 title='video'
                                             />
                                         </div>
-                                        <h6>What are functions and Parameters?</h6>
+                                        <h6>What are class Methods?</h6>
                                         <p className="description">
-                                            A function is a piece of code which only runs when it is called. Functions usually take in parameters which are passed down from the 
-                                            block of code of which it was called from. Parameters are also known as arguments. Parameters are just values you supply to the 
-                                            function so that the function can do something utilising those values
-                                        </p>
+                                        a class is a blueprint for creating objects (a particular data structure), providing initial values for state
+                                         (member variables or attributes), and implementations of behavior (member functions or methods). In many languages, 
+                                         the class name is used as the name for the class (the template itself), the name for the default constructor of the 
+                                         class (a subroutine that creates objects), and as the type of objects generated by instantiating the class
+                                        </p>               
                                     </div>
                                 </Container>
                             </Row>
@@ -142,60 +145,47 @@ function Video2() {
                             <Row>
                                 <Container>
                                     <div className="App">
-
-                                        <h2>Inheritance</h2>
+                                        
+                                        <h2>Constructors</h2>
                                         <div className={vidStyles.videoContainer} 
                                             style={{alignItems: 'center',
                                             display: 'inline',
                                             float: 'left',
                                             border: '1px solid black',
                                             margin: '5px 10px 10px 0px',}} >
-                                            <iframe width="560" height="315" src='https://www.youtube.com/embed/X8nYM8wdNRE'
+                                            <iframe width="560" height="315" src='https://www.youtube.com/embed/_b7odUc7lg0'
                                                 frameBorder='0'
                                                 allow='autoplay; encrypted-media; accelerometer; gyroscope; picture-in-picture'
                                                 allowFullScreen
                                                 title='video'
                                             />
                                         </div>
-                                        <h6>What is inheritance?</h6>
+                                        <h6>What are class Methods?</h6>
                                         <p className="description">
-                                        Inheritance is a mechanism where you can to derive a class from another class for a hierarchy of classes that share a set of 
-                                        attributes and methods.You can use it to declare different kinds of exceptions, add custom logic to existing frameworks, and even 
-                                        map your domain model to a database. It allows software engineers to create class hierarchies, where classes and objects inherit 
-                                        properties and behaviors from their 
-                                        parent (or super) class. A class that inherits from a parent (or super) class is called a subclass or child class, and objects 
-                                        that receive properties and behaviors from a parent through inheritance are referred to as child objects.
+                                            A constructor is a member function of a class which initializes objects of a class Whenever an object is created, the constructor is 
+                                            called automatically. A constructor is like an instance method that usually has the same name as the class, and can be used to set 
+                                            the values of the members of an object, either to default or to user-defined values. However, although it resembles it, a constructor
+                                            is not a proper method since it doesn’t have a return type
                                         </p>
                                     </div>
                                 </Container>
-                            </Row> 
+                            </Row>   
                         </div>
                     </section>
                 </header>
             </main>
             <Link
-                    className={classnames(
-                      'button hero--button button--md button--secondary button--outline responsive-button',
-                      styles.button
-                    )}
-                    to={useBaseUrl('/videos')}
-                    style={{ marginLeft: 200, marginTop: 10 }}
-                  >
-                    Previous
+                className={classnames(
+                    'button hero--button button--md button--secondary button--outline responsive-button',
+                    styles.button
+                )}
+                to={useBaseUrl('/videos2')}
+                style={{ marginLeft: 200, marginTop: 10, float: "center" }}
+                >
+                Next
             </Link>
-            <Link style={{position: "left", justifycontent: "right"}}
-                    className={classnames(
-                      'button hero--button button--md button--secondary button--outline responsive-button',
-                      styles.button, 
-                    )}
-                    to={useBaseUrl('/videos3')}
-                    style={{ marginRight: 200, marginTop: 10, float: "right" }}
-                  >
-                    Next
-            </Link>
-         
         </Layout >
     )
 }
 
-export default Video2
+export default bookVid1
