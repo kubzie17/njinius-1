@@ -77,9 +77,9 @@ module.exports = {
         { to: '/docs/doc6', label: 'Live Sessions', position: 'right' },
         { to: '/Challenge', label: 'Challenge', position: 'right' },
         { to: '/languages', label: 'languages', position: 'right' },
+
         
         {
-          to: '/videos',
           activeBasePath: 'Videos',
           label: 'Videos Sessions',
           position: 'right',
@@ -100,7 +100,6 @@ module.exports = {
         },
 
         {
-          to: '/topics',
           activeBasePath: 'Topics',
           label: 'Topics',
           position: 'right',
