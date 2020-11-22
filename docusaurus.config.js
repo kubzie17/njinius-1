@@ -54,14 +54,13 @@ module.exports = {
    
     navbar: {
 
-      hideOnScroll: true,
+      hideOnScroll: false,
       logo: {
         alt: 'Njinius',
         src: '/static/img/njiniusone.png',
         srcDark: '/static/img/njiniusone.png',
       },
       items: [
-        
         {
           to: '/blog',
           label: 'Blogs',
@@ -76,29 +75,27 @@ module.exports = {
         },
         { to: '/docs/doc6', label: 'Live Sessions', position: 'right' },
         { to: '/Challenge', label: 'Challenge', position: 'right' },
+        { to: '/languages', label: 'languages', position: 'right' },
         {
-          to: '/videos',
           activeBasePath: 'Videos',
           label: 'Videos Sessions',
           position: 'right',
           items: [
             {
               label:'Business Session',
-              to: '/videos2',
+              to: '/bussVid1',
             },
             {
               label:'Software Session',
-              to: '/videos3',
+              to: '/videos',
             },
             {
               label:'Book Club Session',
-              to: '/videos4',
+              to: '/bookVid1',
             },
           ]
         },
-
         {
-          to: '/topics',
           activeBasePath: 'Topics',
           label: 'Topics',
           position: 'right',
@@ -117,13 +114,11 @@ module.exports = {
             },
         ]
         },
-
         {
           href: 'https://github.com/njinius',
           className: 'navbar-item-github',
           position: 'right',
         },
-     
       ],
     },
     prism: {
