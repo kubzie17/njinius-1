@@ -146,7 +146,7 @@ module.exports = {
       type: 'category',
       label: 'Contribute',
       collapsed: false,
-      items:['contribute/about'],
+      items:['contribute/About', 'contribute/How To'],
     },
   ],
 
